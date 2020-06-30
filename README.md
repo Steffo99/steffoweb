@@ -1,3 +1,3 @@
-# [`bluelib-app-template`](https://github.com/Steffo99/bluelib-app-template)
+# [`steffo.eu`](https://steffo.eu)
 
-A [Preact](https://preactjs.com/) website template.
+My personal website in [Preact](https://preactjs.com/).

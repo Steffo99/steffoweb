@@ -11,7 +11,7 @@ else if(process.env.NODE_ENV === "production") {
 	// noinspection JSUnresolvedVariable
 	Sentry.init({
 		// TODO: Sentry DSN goes here
-		dsn: "",
+		dsn: "https://05965b0d953049f493ddca387c1e4c90@o40131.ingest.sentry.io/5300173",
 		release: process.env.RELEASE,
 		environment: "production",
 		beforeSend(event, hint) {
@@ -22,6 +22,8 @@ else if(process.env.NODE_ENV === "production") {
 		}
 	});
 }
+
+import Home from "./routes/Home";
 
 // noinspection ES6UnusedImports
 import "bluelib/dist/index.css";
@@ -39,7 +41,7 @@ export default function(props) {
 	return (
 		<div id="app" class={theme.bluelib}>
 			<Router history={createHashHistory()}>
-
+				<Home path={"/"}/>
 			</Router>
 		</div>
 	);

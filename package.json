@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "example",
+  "name": "steffoweb",
   "version": "0.1.0",
   "license": "AGPL-3.0-or-later",
   "scripts": {
@@ -11,7 +11,7 @@
   "devDependencies": {
     "@sentry/webpack-plugin": "^1.11.1",
     "cross-env": "^7.0.2",
-    "preact-cli": "^3.0.0-rc.14"
+    "preact-cli": "^3.0.0-rc.16"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
