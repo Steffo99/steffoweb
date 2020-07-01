@@ -27,7 +27,7 @@ import Home from "./routes/Home";
 
 // noinspection ES6UnusedImports
 import "bluelib/dist/index.css";
-import {theme} from "bluelib";
+import {BasicContainer, theme} from "bluelib";
 import './meta/manifest.json';
 import './meta/CNAME';
 import './meta/.nojekyll';
@@ -40,9 +40,11 @@ import {createHashHistory} from "history";
 export default function(props) {
 	return (
 		<div id="app" class={theme.bluelib}>
-			<Router history={createHashHistory()}>
-				<Home path={"/"}/>
-			</Router>
+			<BasicContainer>
+				<Router history={createHashHistory()}>
+					<Home path={"/"}/>
+				</Router>
+			</BasicContainer>
 		</div>
 	);
 }
