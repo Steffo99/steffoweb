@@ -27,7 +27,7 @@ import Home from "./routes/Home";
 
 // noinspection ES6UnusedImports
 import "bluelib/dist/index.css";
-import {BasicContainer, theme} from "bluelib";
+import {theme} from "bluelib";
 import './meta/manifest.json';
 import './meta/CNAME';
 import './meta/.nojekyll';

@@ -1,4 +1,4 @@
-import {Panel, Section} from "bluelib";
+import {Panel} from "bluelib";
 
 export default function (props) {
     return (
