@@ -1,4 +1,6 @@
 // Import debugging tools
+import {useState} from "preact/hooks";
+
 let Sentry = null;
 if(process.env.NODE_ENV === "development") {
 	console.debug("Initializing Preact Debugger...")
@@ -27,7 +29,6 @@ import Home from "./routes/Home";
 
 // noinspection ES6UnusedImports
 import "bluelib/dist/index.css";
-import {theme} from "bluelib";
 import './meta/manifest.json';
 import './meta/CNAME';
 import './meta/.nojekyll';
@@ -36,15 +37,20 @@ import './meta/favicon.ico';
 import Router from 'preact-router';
 import {createHashHistory} from "history";
 
+import { theme, BasicContainer } from 'bluelib';
+
 // noinspection JSUnusedGlobalSymbols
 export default function(props) {
+	let [currentPage, setCurrentPage] = useState(window.location.hash.substr(1));
+	const onPageChange = (event) => {
+		setCurrentPage(event.url);
+	};
+
 	return (
-		<div id="app" class={theme.bluelib}>
-			<BasicContainer>
-				<Router history={createHashHistory()}>
-					<Home path={"/"}/>
-				</Router>
-			</BasicContainer>
+		<div id="app" className={theme.bluelib}>
+			<Router history={createHashHistory()} onChange={onPageChange}>
+				<Home path={"/"}/>
+			</Router>
 		</div>
 	);
 }

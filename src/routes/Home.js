@@ -1,17 +1,11 @@
-import {Panel} from "bluelib";
+import style from "./Home.less";
 
 export default function (props) {
     return (
-        <div>
-            <h1>
-                Steffo<small>'s website</small>
-            </h1>
-            <Panel title={"Hello there!"}>
-                Hi! Welcome to my website!
-            </Panel>
-            <Panel title={"Under construction"}>
-                This website is currently under (re)construction. Come back another time!
-            </Panel>
+        <div class={style.container}>
+            <div class={style.content}>
+                hello there general kenobi
+            </div>
         </div>
     );
 }
