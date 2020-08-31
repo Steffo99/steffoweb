@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{bJge:function(e,t,n){"use strict";n.r(t),function(e){var i=n("mbOI");t.default=function(){return e("div",null,e("h1",null,"Steffo",e("small",null,"'s website")),e(i.a,{title:"Hello there!"},"Hi! Welcome to my website!"),e(i.a,{title:"Under construction"},"This website is currently under (re)construction. Come back another time!"))}}.call(this,n("hosL").h)}}]);
-//# sourceMappingURL=route-Home.chunk.654b0.js.map

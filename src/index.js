@@ -34,23 +34,34 @@ import './meta/CNAME';
 import './meta/.nojekyll';
 import './meta/favicon.ico';
 
-import Router from 'preact-router';
+import {BasicContainer, CurrentPage, Bluelib, BaseLink} from 'bluelib';
+import Footer from "./components/Footer";
+import Router from "preact-router";
 import {createHashHistory} from "history";
 
-import { theme, BasicContainer } from 'bluelib';
-
 // noinspection JSUnusedGlobalSymbols
-export default function(props) {
+export default function (props) {
 	let [currentPage, setCurrentPage] = useState(window.location.hash.substr(1));
 	const onPageChange = (event) => {
 		setCurrentPage(event.url);
 	};
 
 	return (
-		<div id="app" className={theme.bluelib}>
-			<Router history={createHashHistory()} onChange={onPageChange}>
-				<Home path={"/"}/>
-			</Router>
-		</div>
+		<CurrentPage.Provider value={currentPage}>
+
+		<Bluelib>
+			<h1>
+				<BaseLink href={"/"}>Steffo</BaseLink>'s website
+			</h1>
+			<BasicContainer>
+				<Router history={createHashHistory()} onChange={onPageChange}>
+					<Home path={"/"}/>
+				</Router>
+			</BasicContainer>
+			<Footer/>
+		</Bluelib>
+
+		</CurrentPage.Provider>
 	);
 }
+
