@@ -29,10 +29,6 @@ import Home from "./routes/Home";
 
 // noinspection ES6UnusedImports
 import "bluelib/dist/index.css";
-import './meta/manifest.json';
-import './meta/CNAME';
-import './meta/.nojekyll';
-import './meta/favicon.ico';
 
 import {BasicContainer, CurrentPage, Bluelib, BaseLink} from 'bluelib';
 import Footer from "./components/Footer";

@@ -1,6 +1,6 @@
 {
   "name": "Steffo's website",
-  "short_name": "Steffo",
+  "short_name": "Steffoweb",
   "start_url": "/",
   "display": "browser",
   "orientation": "portrait",
@@ -9,8 +9,7 @@
   "icons": [
     {
       "src": "/favicon.ico",
-      "type": "image/x-icon",
-      "sizes": "800x800"
+      "type": "image/x-icon"
     }
   ]
 }
