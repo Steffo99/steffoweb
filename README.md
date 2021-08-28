@@ -1,28 +1,21 @@
-# ![Steffoweb](src/assets/opengraph.png)
+# ![Steffoweb](public/opengraph.png)
 
-My personal website in [Preact](https://preactjs.com/).
-
-![maintenance: actively-developed](https://img.shields.io/badge/maintenance-actively--developed-brightgreen)
+My personal website in [React](https://reactjs.org/).
 
 ## Developing
 
 ### Running a local copy
 
-If you want to run a local copy of the website, ensure [the latest `nodejs`](https://nodejs.org/it/) and `npm` are installed on your machine then run:
+If for whatever reason you want to run a local copy of the website, ensure [the latest `nodejs`](https://nodejs.org/it/) and `yarn` are installed on your 
+machine, then run:
 
 ```bash
-git clone https://github.com/Steffo99/uni.steffo.eu.git
-cd "uni.steffo.eu"
-npm install --dev
-npm run start
+git clone https://github.com/Steffo99/steffoweb.git
+cd "steffoweb"
+yarn
+yarn run start
 ```
 
 ### Updating the website
 
-To update the published website, bump up the version number in the package.json and run in the previously cloned folder:
-
-```bash
-npm run all
-```
-
-[GitHub Pages](https://pages.github.com/) will do the rest.
+The website will automatically update based on the `master` branch.

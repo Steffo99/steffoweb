@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0d193b;
+  color: #a0ccff;
+}
+
+body > * {
+  min-height: 100vh;
+}
