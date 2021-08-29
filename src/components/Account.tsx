@@ -1,5 +1,4 @@
 import * as React from "react"
-import * as ReactDOM from "react-dom"
 import {IconDefinition} from "@fortawesome/free-regular-svg-icons";
 import {Panel, Anchor} from "@steffo/bluelib-react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

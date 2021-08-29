@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react'
 import {Bluelib, LayoutThreeCol, Heading, Chapter, Box, BringAttention as B, Anchor, Form} from "@steffo/bluelib-react";
-import {Project} from "./components/Project";
-import {MoreProjects} from "./components/MoreProjects";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faDiscord, faGithub, faReddit, faTelegram, faTwitter} from "@fortawesome/free-brands-svg-icons";
-import {Account} from "./components/Account";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {Project} from "./components/Project"
+import {MoreProjects} from "./components/MoreProjects"
+import {faDiscord, faGithub, faReddit, faTelegram} from "@fortawesome/free-brands-svg-icons"
+import {Account} from "./components/Account"
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
 
 type Theme = "paper" | "royalblue" | "hacker" | "sophon"
@@ -25,7 +24,7 @@ const FULL_THEME_NAMES: ThemeMap = {
 
 
 function App() {
-    const [theme, setTheme] = useState<Theme>("royalblue")
+    const [theme, setTheme] = React.useState<Theme>("royalblue")
 
     return (
         <Bluelib theme={theme}>

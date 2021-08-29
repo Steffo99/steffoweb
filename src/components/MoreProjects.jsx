@@ -1,5 +1,4 @@
 import * as React from "react"
-import * as ReactDOM from "react-dom"
 import {Anchor} from "@steffo/bluelib-react"
 import Style from "./MoreProjects.module.css"
 
