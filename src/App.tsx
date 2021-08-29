@@ -1,5 +1,7 @@
 import React from 'react';
-import {Bluelib, LayoutThreeCol, Heading, Chapter, Box, BringAttention as B, Anchor, ListUnordered as UL} from "@steffo/bluelib-react";
+import {Bluelib, LayoutThreeCol, Heading, Chapter, Box, BringAttention as B, Idiomatic as I, Anchor} from "@steffo/bluelib-react";
+import {Project} from "./components/Project";
+import {MoreProjects} from "./components/MoreProjects";
 
 function App() {
     return (
@@ -25,22 +27,17 @@ function App() {
                     <Chapter>
                         <Box>
                             <Heading level={3}>
-                                Some of my projects
+                                My software projects
                             </Heading>
-                            <UL>
-                                <UL.Item>
-                                    <Anchor href={"https://github.com/Steffo99/greed"}>Greed</Anchor>, a customizable, multilanguage Telegram shop bot with Payments support
-                                </UL.Item>
-                                <UL.Item>
-                                    <Anchor href={"https://github.com/Steffo99/bluelib"}>Bluelib</Anchor> and <Anchor href={"https://github.com/Steffo99/bluelib-react"}>Bluelib React</Anchor>, the libraries this website is based on
-                                </UL.Item>
-                                <UL.Item>
-                                    <Anchor href={"https://github.com/Steffo99/lihzahrd"}>Lihzahrd</Anchor>, a Python library to parse Terraria worlds, and <Anchor href={"https://github.com/Steffo99/flyingsnake"}>Flyingsnake</Anchor>, a map renderer based on it
-                                </UL.Item>
-                                <UL.Item>
-                                    <Anchor href={"https://github.com/RYGhub/bobbot"}>Bob</Anchor>, a Discord bot that allows server members to create temporary voice channels
-                                </UL.Item>
-                            </UL>
+                            <Project user={"Steffo99"} repo={"greed"}/>
+                            <Project user={"Steffo99"} repo={"bluelib"}/>
+                            <Project user={"Steffo99"} repo={"appuntiweb"}/>
+                            <Project user={"RYGhub"} repo={"bobbot"}/>
+                            <Project user={"Steffo99"} repo={"lihzahrd"}/>
+                            <Project user={"Steffo99"} repo={"flyingsnake"}/>
+                            <Project user={"pds-nest"} repo={"nest"}/>
+                            <Project user={"Steffo99"} repo={"keep-everything-alive"}/>
+                            <MoreProjects user={"Steffo99"}/>
                         </Box>
                     </Chapter>
                 </LayoutThreeCol.Center>

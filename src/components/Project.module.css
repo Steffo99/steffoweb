@@ -1,0 +1,29 @@
+.Project {
+    display: grid;
+
+    grid-template-areas:
+            "title description stars"
+    ;
+    grid-template-columns: 1fr 4fr auto;
+    grid-column-gap: 12px;
+
+    align-items: center;
+}
+
+.Title {
+    font-size: larger;
+
+    grid-area: title;
+}
+
+.Description {
+    justify-self: start;
+
+    grid-area: description;
+}
+
+.Stars {
+    justify-self: end;
+
+    grid-area: stars;
+}
