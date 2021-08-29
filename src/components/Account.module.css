@@ -1,0 +1,5 @@
+.Account {
+    white-space: nowrap;
+    width: 50%;
+    flex-basis: calc(50% - 8px) !important;
+}

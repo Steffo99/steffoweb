@@ -1,6 +1,8 @@
 import * as React from "react"
 import {Panel, Anchor} from "@steffo/bluelib-react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import Style from "./Project.module.css"
+import { faStar } from "@fortawesome/free-solid-svg-icons"
 
 
 export function Project({user, repo}) {
@@ -53,7 +55,7 @@ export function Project({user, repo}) {
                     {data["description"]}
                 </div>
                 <div className={Style.Stars}>
-                    ★ {data["stargazers_count"]}
+                    <FontAwesomeIcon icon={faStar}/> {data["stargazers_count"]}
                 </div>
             </>
         },
