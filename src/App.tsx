@@ -57,7 +57,7 @@ function App() {
                             <Project user={"Steffo99"} repo={"flyingsnake"}/>
                             <Project user={"pds-nest"} repo={"nest"}/>
                             <Project user={"Steffo99"} repo={"keep-everything-alive"}/>
-                            <MoreProjects user={"Steffo99"}/>
+                            <MoreProjects user={"Steffo99"} minus={7}/>
                         </Box>
                     </Chapter>
                     <Chapter>

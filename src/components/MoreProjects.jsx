@@ -3,7 +3,7 @@ import {Anchor} from "@steffo/bluelib-react"
 import Style from "./MoreProjects.module.css"
 
 
-export function MoreProjects({user}) {
+export function MoreProjects({user, minus}) {
     const [data, setData] = React.useState(null)
     const [error, setError] = React.useState(null)
 
@@ -28,7 +28,7 @@ export function MoreProjects({user}) {
         () => {
             if(data === null) return "Loading..."
             else if(error !== null) return "Error: {error}"
-            return `...and ${data["public_repos"]} more!`
+            return `...and ${data["public_repos"] - minus} more!`
         },
         [data, error]
     )
