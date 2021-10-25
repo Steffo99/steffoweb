@@ -22,7 +22,7 @@ export function Account({icon, url, name}: AccountProps): JSX.Element {
     }
 
     return (
-        <Panel className={Style.Account}>
+        <Panel className={Style.Account} style={{minWidth: "unset"}}>
             {contents}
         </Panel>
     )
