@@ -55,11 +55,13 @@ export function Project({user, repo}) {
                     {data["description"]}
                 </div>
                 <div className={Style.Stars}>
-                    <FontAwesomeIcon icon={faStar}/> {data["stargazers_count"]}
+                    <Anchor href={`https://github.com/${user}/${repo}/stargazers`}>
+                        <FontAwesomeIcon icon={faStar}/> {data["stargazers_count"]}
+                    </Anchor>
                 </div>
             </>
         },
-        [data, error]
+        [user, repo, data, error]
     )
 
     return (

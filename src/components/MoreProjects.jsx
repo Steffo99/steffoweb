@@ -30,7 +30,7 @@ export function MoreProjects({user, minus}) {
             else if(error !== null) return "Error: {error}"
             return `...and ${data["public_repos"] - minus} more!`
         },
-        [data, error]
+        [data, error, minus]
     )
 
     return (
