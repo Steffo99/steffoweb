@@ -1,3 +1,4 @@
+import {BluelibTheme} from "@steffo/bluelib-react/dist/types"
 import React from 'react'
 import {Bluelib, LayoutThreeCol, Heading, Chapter, Box, BringAttention as B, Anchor, Form} from "@steffo/bluelib-react";
 import {Project} from "./components/Project"
@@ -7,11 +8,8 @@ import {Account} from "./components/Account"
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
 
-type Theme = "paper" | "royalblue" | "hacker" | "sophon"
-
-
 type ThemeMap = {
-    [fullname: string]: Theme;
+    [fullname: string]: BluelibTheme;
 };
 
 
@@ -20,11 +18,12 @@ const FULL_THEME_NAMES: ThemeMap = {
     "The Sophonity": "sophon",
     "Sheet of Paper": "paper",
     "Hacker Terminal": "hacker",
+    "Gestione Amber": "amber",
 }
 
 
 function App() {
-    const [theme, setTheme] = React.useState<Theme>("royalblue")
+    const [theme, setTheme] = React.useState<BluelibTheme>("royalblue")
 
     return (
         <Bluelib theme={theme}>
@@ -51,6 +50,7 @@ function App() {
                             <Heading level={3}>
                                 My software projects
                             </Heading>
+                            <Project user={"Steffo99"} repo={"sophon"}/>
                             <Project user={"Steffo99"} repo={"greed"}/>
                             <Project user={"Steffo99"} repo={"bluelib"}/>
                             <Project user={"RYGhub"} repo={"bobbot"}/>
@@ -79,9 +79,7 @@ function App() {
                                 Other stuff
                             </Heading>
                             <Form>
-                                <Form.Select label={"Theme"} onChange={event => setTheme(FULL_THEME_NAMES[event.target.value])}>
-                                    {Object.keys(FULL_THEME_NAMES).map(key => <Form.Select.Option value={key}/>)}
-                                </Form.Select>
+                                <Form.Select label={"Theme"} onChange={event => setTheme(FULL_THEME_NAMES[event.target.value])} options={FULL_THEME_NAMES}/>
                             </Form>
                         </Box>
                     </Chapter>

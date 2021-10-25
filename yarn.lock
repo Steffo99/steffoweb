@@ -1603,10 +1603,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@steffo/bluelib-react@^3.0.4":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@steffo/bluelib-react/-/bluelib-react-3.0.5.tgz#4543056a0a06efa5fc1ab48d2288b32430eb32f8"
-  integrity sha512-CkvEzeXS7PuIFvTFrDpAU2Gtxhe4L3CF+YkenSzCm0YNWSZ9dW3R1ePEeBNESQW8QZ+fuRu93586etP+bvnBfg==
+"@steffo/bluelib-react@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@steffo/bluelib-react/-/bluelib-react-4.2.0.tgz#12d10517be68366519c4ddf0e21a3b341c9b47b4"
+  integrity sha512-meWWsjiD4cjt7A2nbQHbtY6iFdVJyjlbzUUH5zcPCwVtL6H8gTZ5VTabw+38j5ydDToTd4u9/LNdl8DMq2EcQg==
   dependencies:
     "@babel/runtime" "^7.15.3"
     classnames "^2.3.1"
