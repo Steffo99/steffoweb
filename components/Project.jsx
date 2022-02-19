@@ -5,7 +5,7 @@ import Style from "./Project.module.css"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 
 
-export function Project({user, repo}) {
+export function Project({user, repo, lang}) {
     const [data, setData] = React.useState(null)
     const [error, setError] = React.useState(null)
 
