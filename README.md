@@ -13,7 +13,7 @@ machine, then run:
 git clone https://github.com/Steffo99/steffoweb.git
 cd "steffoweb"
 yarn
-yarn run start
+yarn run dev
 ```
 
 ### Updating the website
