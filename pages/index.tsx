@@ -32,7 +32,7 @@ const Index: NextPage = () => {
                     About me
                 </Heading>
                 <p>
-                    I'm <B>Stefano Pigozzi</B>, a Computer Science student at <Anchor href={"https://www.unimore.it"}>Unimore</Anchor>!
+                    I'm <B>Stefano Pigozzi</B>, a Computer Science graduate at <Anchor href={"https://www.unimore.it"}>Unimore</Anchor>!
                 </p>
                 <p>
                     I develop and maintain many <B>open source</B> software projects, such as websites, chat bots, libraries, videogames and mods.
