@@ -18,4 +18,4 @@ yarn run dev
 
 ### Updating the website
 
-The website will automatically update based on the `master` branch.
+The website will automatically update based on the `next` branch.
