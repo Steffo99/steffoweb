@@ -1,0 +1,43 @@
+.projectPanel {
+    flex-basis: 232px !important;
+    flex-grow: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.projectImage {
+    border-radius: var(--b-border-radius);
+}
+
+.projectPanel:hover .projectImage, .projectPanel:focus .projectImage {
+    filter: brightness(80%) blur(16px);
+}
+
+.projectDescription {
+    visibility: hidden;
+    position: absolute;
+
+    width: 232px;
+    height: 116px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    text-align: center;
+    text-shadow: 1px 1px 0 hsl(var(--bhsl-background-hue) var(--bhsl-background-saturation) var(--bhsl-background-lightness)) !important;
+
+    background-color: hsl(var(--bhsl-current-hue) var(--bhsl-current-saturation) var(--bhsl-current-lightness) / 0.075);
+
+    border-width: 2px;
+    border-radius: var(--b-border-radius);
+}
+
+.projectDescription h4 {
+    text-shadow: 1px 1px 0 hsl(var(--bhsl-background-hue) var(--bhsl-background-saturation) var(--bhsl-background-lightness)) !important;
+}
+
+.projectPanel:hover .projectDescription, .projectPanel:focus .projectDescription {
+    visibility: visible;
+}

@@ -1,0 +1,11 @@
+.linkPanel {
+    text-decoration: none;
+}
+
+.linkPanel:hover, .linkPanel:focus {
+    --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 20%);
+}
+
+.linkPanel:active {
+    --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 40%);
+}

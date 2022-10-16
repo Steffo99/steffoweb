@@ -4,20 +4,20 @@ body {
   background-size: cover;
 }
 
+footer {
+  text-shadow: 2px 2px 4px hsl(var(--bhsl-background-hue) var(--bhsl-background-saturation) var(--bhsl-background-lightness));
+}
+
+.panel {
+  min-width: 288px;
+}
+
+.panel .panel {
+  min-width: 0;
+}
+
 #__next {
   margin: 0 auto;
   min-height: 100vh;
   max-width: 1000px;
-}
-
-#panel-internet a {
-  text-decoration: none;
-}
-
-#panel-internet a:hover, #panel-internet a:focus {
-  --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 20%);
-}
-
-#panel-internet a:active {
-  --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 40%);
 }
