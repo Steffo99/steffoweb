@@ -1,16 +1,23 @@
 body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: #0d193b;
   background-image: url("/space_default.jpg");
+  background-attachment: fixed;
   background-size: cover;
-  color: #a0ccff;
 }
 
-body > * {
+#__next {
+  margin: 0 auto;
   min-height: 100vh;
+  max-width: 1000px;
 }
 
-body > * > * {
-  min-height: 100vh;
+#panel-internet a {
+  text-decoration: none;
+}
+
+#panel-internet a:hover, #panel-internet a:focus {
+  --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 20%);
+}
+
+#panel-internet a:active {
+  --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 40%);
 }
