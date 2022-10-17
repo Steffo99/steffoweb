@@ -3,6 +3,8 @@
     flex-grow: 0 !important;
     padding: 0 !important;
     overflow: hidden;
+
+    text-decoration: none;
 }
 
 .projectImage {
@@ -40,4 +42,47 @@
 
 .projectPanel:hover .projectDescription, .projectPanel:focus .projectDescription {
     visibility: visible;
+}
+
+@media (hover: none) or (any-pointer: coarse) {
+    .projectPanel {
+        flex-basis: 100% !important;
+        flex-direction: row !important;
+    }
+
+    .projectDescription {
+        position: unset;
+        visibility: visible;
+
+        width: unset;
+
+        align-content: flex-start;
+        text-align: left;
+        text-shadow: none;
+
+        background-color: transparent;
+        border-width: 0;
+    }
+
+    .projectDescription h4 {
+        text-shadow: none;
+
+        text-align: left !important;
+    }
+
+    .projectImage {
+        border-radius: var(--b-border-radius) 0 0 var(--b-border-radius) !important;
+    }
+
+    .projectPanel:hover .projectImage, .projectPanel:focus .projectImage {
+        filter: none;
+    }
+
+    .projectPanel:hover, .projectPanel:focus {
+        --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 20%);
+    }
+
+    .projectPanel:active {
+        --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 40%);
+    }
 }

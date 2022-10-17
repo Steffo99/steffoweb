@@ -1,8 +1,9 @@
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import React from 'react'
 import type {NextPage} from "next"
 import {default as Link} from "next/link"
 import {faRedditAlien, faMastodon, faGithub, faDiscord, faTelegram, faSteam, faItchIo, faTwitter, faLinkedin, faStackOverflow} from "@fortawesome/free-brands-svg-icons"
-import {faBorderAll, faEnvelope, faPizzaSlice, faGamepad, faBook, faBox, faFilm, faMusic} from "@fortawesome/free-solid-svg-icons"
+import {faBorderAll, faEnvelope, faPizzaSlice, faGamepad, faBook, faBox, faFilm, faMusic, faGlobe, faPlus} from "@fortawesome/free-solid-svg-icons"
 import {LinkPanel} from "../components/LinkPanel"
 import {ProjectPanel} from "../components/ProjectPanel"
 
@@ -11,6 +12,13 @@ import {default as imgBlank} from "../public/img/projects/blank.png"
 import {default as imgBluelib} from "../public/img/projects/bluelib.png"
 import {default as imgSophon} from "../public/img/projects/sophon.png"
 import {default as imgParticleClash} from "../public/img/projects/particle-clash.png"
+import {default as imgTheColdNight} from "../public/img/projects/the-cold-night.png"
+import {default as imgLoopingForLoops} from "../public/img/projects/looping-for-loops.png"
+import {default as imgKeepEverythingAlive} from "../public/img/projects/keep-everything-alive.png"
+import {default as imgGravityFusion} from "../public/img/projects/gravity-fusion.png"
+import {default as imgSlimeBloodAndPain} from "../public/img/projects/slime-blood-and-pain.png"
+import {default as imgBleachBeach} from "../public/img/projects/bleach-beach.png"
+import {default as imgBeatTD} from "../public/img/projects/beat-td.png"
 
 
 const Index: NextPage = () => {
@@ -37,34 +45,84 @@ const Index: NextPage = () => {
                     My projects
                 </h3>
                 <p>
-                    I should write an intro sentence here
+                    In my free time, I have developed many open source projects, some of which have gained popularity and are still in use today!
                 </p>
-                <div className={"chapter-4"}>
-                    <ProjectPanel
-                        src={imgSteffoweb}
-                        href={"https://github.com/Steffo99/steffoweb"}
-                        name={"Steffoweb"}
-                        description={<span>This very website!</span>}
-                    />
-                    <ProjectPanel
-                        src={imgBluelib}
-                        href={"https://github.com/Steffo99/bluelib"}
-                        name={"Bluelib"}
-                        description={<span>Customizable, flexible and modular CSS library</span>}
-                    />
-                    <ProjectPanel
-                        src={imgSophon}
-                        href={"https://github.com/Steffo99/sophon"}
-                        name={"Sophon"}
-                        description={<span>Research hub for universities</span>}
-                    />
-                    <ProjectPanel
-                        src={imgParticleClash}
-                        href={"https://github.com/Steffo99/particle-clash"}
-                        name={"Particle Clash"}
-                        description={<span>Match-4 game for two players about particles about to collide</span>}
-                    />
-                </div>
+                <details className={"details-no-indent details-header"}>
+                    <summary>Software</summary>
+                    <div className={"chapter-4"}>
+                        <ProjectPanel
+                            src={imgSteffoweb}
+                            href={"https://github.com/Steffo99/steffoweb"}
+                            name={"Steffoweb"}
+                            description={<span>This very website!</span>}
+                        />
+                        <ProjectPanel
+                            src={imgBluelib}
+                            href={"https://github.com/Steffo99/bluelib"}
+                            name={"Bluelib"}
+                            description={<span>Customizable, flexible and modular CSS library</span>}
+                        />
+                        <ProjectPanel
+                            src={imgSophon}
+                            href={"https://github.com/Steffo99/sophon"}
+                            name={"Sophon"}
+                            description={<span>Research hub for universities</span>}
+                        />
+                    </div>
+                </details>
+                <details className={"details-no-indent details-header"}>
+                    <summary>Game jam entries</summary>
+                    <div className={"chapter-4"}>
+                        <ProjectPanel
+                            src={imgParticleClash}
+                            href={"https://steffo.itch.io/particle-clash"}
+                            name={"Particle Clash"}
+                            description={<span><abbr title={"Ludum Dare 51"}>LD51</abbr>: Match-4 particle collider</span>}
+                        />
+                        <ProjectPanel
+                            src={imgTheColdNight}
+                            href={"https://steffo.itch.io/the-cold-night"}
+                            name={"The Cold Night"}
+                            description={<span><abbr title={"Ludum Dare 50"}>LD50</abbr>: Top-down snowman melter</span>}
+                        />
+                        <ProjectPanel
+                            src={imgLoopingForLoops}
+                            href={"https://steffo.itch.io/the-cold-night"}
+                            name={"Looping for lööps"}
+                            description={<span><abbr title={"Ludum Dare 47"}>LD47</abbr>: Fruit-looping platformer</span>}
+                        />
+                        <ProjectPanel
+                            src={imgKeepEverythingAlive}
+                            href={"https://steffo.itch.io/keep-everything-alive"}
+                            name={"Keep Everything Alive"}
+                            description={<span><abbr title={"Ludum Dare 46"}>LD46</abbr>: Lively microgame collection</span>}
+                        />
+                        <ProjectPanel
+                            src={imgGravityFusion}
+                            href={"https://steffo.itch.io/gravity-fusion"}
+                            name={"Gravity Fusion"}
+                            description={<span><abbr title={"Ludum Dare 45"}>LD45</abbr>: Colorful incremental game</span>}
+                        />
+                        <ProjectPanel
+                            src={imgSlimeBloodAndPain}
+                            href={"https://steffo.itch.io/slime-blood-and-pain"}
+                            name={"Slime, Blood and Pain"}
+                            description={<span><abbr title={"Ludum Dare 44"}>LD44</abbr>: Infinite dungeon crawler</span>}
+                        />
+                        <ProjectPanel
+                            src={imgBleachBeach}
+                            href={"https://steffo.itch.io/bleach-beach"}
+                            name={"Bleach Beach"}
+                            description={<span><abbr title={"Ludum Dare 42"}>LD42</abbr>: Wonky physics-based spear fishing simulator</span>}
+                        />
+                        <ProjectPanel
+                            src={imgBeatTD}
+                            href={"https://steffo.itch.io/beat-td"}
+                            name={"Beat TD"}
+                            description={<span><abbr title={"Ludum Dare 41"}>LD41</abbr>: Rhythm-based tower-defense</span>}
+                        />
+                    </div>
+                </details>
             </section>
         </div>
         <div className={"chapter-2"}>
@@ -134,17 +192,18 @@ const Index: NextPage = () => {
                     I am by no means a critic, so don't pay this too much attention unless you're interested in what I like...
                 </p>
             </section>
-            <section className={"panel box"}>
+            <section className={"panel box todo"}>
                 <h3>
-                    Friends with a website
+                    Friends
                 </h3>
                 <p>
                     You can check out my friends' websites here:
                 </p>
-                <div className={"panel fade"}>
-                    <p>
-                        This section was just created: if you know me, please tell me your website so I can add it here! :D
-                    </p>
+                <div className={"chapter-3"}>
+                    <LinkPanel icon={faGlobe} text={"SnowyCoder"} href={"https://rossilorenzo.dev"}/>
+                    <div className={"panel fade"}>
+                        <span><FontAwesomeIcon icon={faPlus}/> And more yet to add!</span>
+                    </div>
                 </div>
             </section>
         </div>
