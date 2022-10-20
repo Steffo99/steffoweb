@@ -15,7 +15,7 @@ export type ProjectPanelProps = Pick<ImageProps, "src"> & {
 export const ProjectPanel = ({src, href, name, description}: ProjectPanelProps) => {
     const panel = (
         <a className={cn({panel: true, [style.projectPanel]: true})}>
-            <Image alt={name} src={src} className={cn({[style.projectImage]: true})} width={232} height={116}/>
+            <Image alt={name} src={src} className={cn({[style.projectImage]: true})} width={228} height={114}/>
             <div className={cn({[style.projectDescription]: true})}>
                 <h4>{name}</h4>
                 <p>

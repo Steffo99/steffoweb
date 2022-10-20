@@ -47,7 +47,7 @@ const Index: NextPage = () => {
                 <p>
                     In my free time, I have developed many open source projects, some of which have gained popularity and are still in use today!
                 </p>
-                <details className={"details-no-indent details-header"}>
+                <details className={"details-no-indent details-header panel box"}>
                     <summary>Software</summary>
                     <div className={"chapter-4"}>
                         <ProjectPanel
@@ -70,7 +70,18 @@ const Index: NextPage = () => {
                         />
                     </div>
                 </details>
-                <details className={"details-no-indent details-header"}>
+                <details className={"details-no-indent details-header panel box"}>
+                    <summary>Scientific papers</summary>
+                    <div className={"chapter-4"}>
+                        <ProjectPanel
+                            src={imgSophon}
+                            href={"https://dl.acm.org/doi/fullHtml/10.1145/3491418.3535163"}
+                            name={"Sophon: an Extensible Platform for Collaborative Research"}
+                            description={<span><cite>Stefano Pigozzi</cite>, <cite>Francesco Faenza</cite>, <cite>Claudia Canali</cite></span>}
+                        />
+                    </div>
+                </details>
+                <details className={"details-no-indent details-header panel box"}>
                     <summary>Game jam entries</summary>
                     <div className={"chapter-4"}>
                         <ProjectPanel
@@ -120,6 +131,35 @@ const Index: NextPage = () => {
                             href={"https://steffo.itch.io/beat-td"}
                             name={"Beat TD"}
                             description={<span><abbr title={"Ludum Dare 41"}>LD41</abbr>: Rhythm-based tower-defense</span>}
+                        />
+                    </div>
+                </details>
+                <details className={"details-no-indent details-header panel box"}>
+                    <summary>Notes</summary>
+                    <div className={"chapter-4"}>
+                        <ProjectPanel
+                            src={imgBlank}
+                            href={"https://example.org"}
+                            name={"Placeholder"}
+                            description={<span>There's nothing here yet.</span>}
+                        />
+                        <ProjectPanel
+                            src={imgBlank}
+                            href={"https://example.org"}
+                            name={"Placeholder"}
+                            description={<span>There's nothing here yet.</span>}
+                        />
+                        <ProjectPanel
+                            src={imgBlank}
+                            href={"https://example.org"}
+                            name={"Placeholder"}
+                            description={<span>There's nothing here yet.</span>}
+                        />
+                        <ProjectPanel
+                            src={imgBlank}
+                            href={"https://example.org"}
+                            name={"Placeholder"}
+                            description={<span>There's nothing here yet.</span>}
                         />
                     </div>
                 </details>
