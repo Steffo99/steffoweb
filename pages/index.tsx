@@ -203,7 +203,7 @@ const Index: NextPage = () => {
                     <LinkPanel icon={faGlobe} text={"SnowyCoder"} href={"https://rossilorenzo.dev/"}/>
                     <LinkPanel icon={faGlobe} text={"Nemesis"} href={"https://www.fermitech.info/"}/>
                     <div className={"panel fade"}>
-                        <span><FontAwesomeIcon icon={faPlus}/> And more yet to add!</span>
+                        <span><FontAwesomeIcon icon={faPlus}/> And more!</span>
                     </div>
                 </div>
             </section>
