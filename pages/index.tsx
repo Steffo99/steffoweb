@@ -206,6 +206,9 @@ const Index: NextPage = () => {
                         <span><FontAwesomeIcon icon={faPlus}/> And more!</span>
                     </div>
                 </div>
+                <small style={{fontSize: "x-small"}} className={"float-bottom"}>
+                    Hey friends, please make a small personal website, so I can add you here! <span aria-hidden>:D</span>
+                </small>
             </section>
         </div>
     </>
