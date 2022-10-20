@@ -197,11 +197,11 @@ const Index: NextPage = () => {
                     Friends
                 </h3>
                 <p>
-                    You can check out my friends' websites here:
+                    You can check out my friends' websites here (in alphanumeric order):
                 </p>
                 <div className={"chapter-3"}>
-                    <LinkPanel icon={faGlobe} text={"SnowyCoder"} href={"https://rossilorenzo.dev/"}/>
                     <LinkPanel icon={faGlobe} text={"Nemesis"} href={"https://www.fermitech.info/"}/>
+                    <LinkPanel icon={faGlobe} text={"SnowyCoder"} href={"https://rossilorenzo.dev/"}/>
                     <div className={"panel fade"}>
                         <span><FontAwesomeIcon icon={faPlus}/> And more!</span>
                     </div>
