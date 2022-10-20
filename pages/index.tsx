@@ -192,7 +192,7 @@ const Index: NextPage = () => {
                     I am by no means a critic, so don't pay this too much attention unless you're interested in what I like...
                 </p>
             </section>
-            <section className={"panel box todo"}>
+            <section className={"panel box"}>
                 <h3>
                     Friends
                 </h3>
@@ -200,7 +200,8 @@ const Index: NextPage = () => {
                     You can check out my friends' websites here:
                 </p>
                 <div className={"chapter-3"}>
-                    <LinkPanel icon={faGlobe} text={"SnowyCoder"} href={"https://rossilorenzo.dev"}/>
+                    <LinkPanel icon={faGlobe} text={"SnowyCoder"} href={"https://rossilorenzo.dev/"}/>
+                    <LinkPanel icon={faGlobe} text={"Nemesis"} href={"https://www.fermitech.info/"}/>
                     <div className={"panel fade"}>
                         <span><FontAwesomeIcon icon={faPlus}/> And more yet to add!</span>
                     </div>
