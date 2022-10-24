@@ -85,7 +85,6 @@ const Index: NextPage = () => {
                     <LinkPanel href={"https://github.com/Steffo99/flyingsnake"} icon={faFileCode} text={"flyingsnake"}/>
                     <LinkPanel href={"https://gh.steffo.eu/trivia/"} icon={faGlobe} text={"Trivia"}/>
                     <LinkPanel href={"https://github.com/Steffo99/steamleaderboards"} icon={faFileCode} text={<span style={{fontSize: "small"}}>steamleaderboards</span>}/>
-                    <LinkPanel href={"https://github.com/Steffo99/estus"} icon={faFileCode} text={"Estus"}/>
                 </div>
                 <small style={{fontSize: "x-small"}} className={"float-bottom"}>
                     There are more on <Link href={"https://github.com/Steffo99?tab=repositories"}>my GitHub profile</Link>!
