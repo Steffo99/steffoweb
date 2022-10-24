@@ -26,27 +26,6 @@ footer {
   margin-top: 0 !important;
 }
 
-.details-no-indent {
-  margin-left: 0;
-}
-
-.details-no-indent summary {
-  margin-left: 0;
-}
-
-.details-header summary {
-  text-align: center;
-  --bhsl-current-hue: var(--bhsl-primary-hue);
-  --bhsl-current-saturation: var(--bhsl-primary-saturation);
-  --bhsl-current-lightness: var(--bhsl-primary-lightness);
-  font-style: var(--bfont-header-style);
-  font-variant: var(--bfont-header-variant);
-  font-weight: var(--bfont-header-weight);
-  font-stretch: var(--bfont-header-stretch);
-  line-height: var(--bfont-header-height);
-  font-family: var(--bfont-header-family);
-}
-
 #__next {
   margin: 0 auto;
   min-height: 100vh;
