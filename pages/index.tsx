@@ -100,6 +100,7 @@ const Index: NextPage = () => {
                 <div className={"chapter-3"}>
                     <LinkPanel icon={faGlobe} text={"Gimbaro"} href={"https://gimbaro.dev/"}/>
                     <LinkPanel icon={faGlobe} text={"Ichicoro"} href={"https://marte.dev/"}/>
+                    <LinkPanel icon={faGlobe} text={"Malbyx"} href={"https://about.malbyx.tk/"}/>
                     <LinkPanel icon={faGlobe} text={"Nemesis"} href={"https://www.fermitech.info/"}/>
                     <LinkPanel icon={faGlobe} text={"SnowyCoder"} href={"https://rossilorenzo.dev/"}/>
                     <div className={"panel fade"}>
