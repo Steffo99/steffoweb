@@ -17,21 +17,25 @@ export type LinkPanelProps = {
 
 export const LinkPanel = ({href, icon, text, me, fade}: LinkPanelProps) => {
     const panel = (
-        <a className={cn({panel: true, [style.linkPanel]: true, fade: fade})} rel={me ? "me" : ""}>
-            <span>
-                <FontAwesomeIcon icon={icon}/>&nbsp;{text}
-            </span>
-        </a>
+        <span>
+            <FontAwesomeIcon icon={icon}/>&nbsp;{text}
+        </span>
     )
 
     if(href) {
         return (
-            <Link href={href}>
-                {panel}
-            </Link>
+            <a className={cn({panel: true, [style.linkPanel]: true, fade: fade})} rel={me ? "me" : ""}>
+                <Link href={href}>
+                    {panel}
+                </Link>
+            </a>
         )
     }
     else {
-        return panel
+        return (
+            <div className={cn({panel: true, fade: fade})}>
+                {panel}
+            </div>
+        )
     }
 }
