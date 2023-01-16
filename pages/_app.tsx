@@ -14,6 +14,8 @@ import {default as imgSRound} from "../public/s-round.png"
 
 import type {AppProps} from "next/app"
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+config.autoAddCss = false
 
 const App = ({Component, pageProps}: AppProps) => {
     return <>
