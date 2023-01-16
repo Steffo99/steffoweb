@@ -24,11 +24,11 @@ export const LinkPanel = ({href, icon, text, me, fade}: LinkPanelProps) => {
 
     if(href) {
         return (
-            <a className={cn({panel: true, [style.linkPanel]: true, fade: fade})} rel={me ? "me" : ""}>
-                <Link href={href}>
+            <Link href={href}>
+                <a className={cn({panel: true, [style.linkPanel]: true, fade: fade})} rel={me ? "me" : ""}>
                     {panel}
-                </Link>
-            </a>
+                </a>
+            </Link>
         )
     }
     else {
