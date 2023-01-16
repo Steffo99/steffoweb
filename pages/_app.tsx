@@ -2,12 +2,6 @@ import {default as Link} from "next/link"
 import {default as Image} from "next/future/image"
 import React from 'react'
 
-import "@steffo/bluelib/dist/base.root.css"
-import "@steffo/bluelib/dist/colors-royalblue.root.css"
-import "@steffo/bluelib/dist/fonts-fira-ghpages.root.css"
-import "@steffo/bluelib/dist/classic.root.css"
-import "@steffo/bluelib/dist/glass.root.css"
-import "@steffo/bluelib/dist/fun.root.css"
 import "./_app.css"
 
 import {default as imgSRound} from "../public/s-round.png"
