@@ -1,5 +1,6 @@
 .linkPanel {
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .linkPanel:hover, .linkPanel:focus {

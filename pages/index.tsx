@@ -34,10 +34,9 @@ const Index: NextPage = () => {
                     You can find me in many places around the Internet:
                 </p>
                 <div className={"chapter-2"}>
-                    <LinkPanel me href={"https://github.com/Steffo99"} icon={faGithub} text={"Steffo99"}/>
-                    <LinkPanel me href={"https://old.reddit.com/user/steffo99"} icon={faRedditAlien} text={<span><small>/u/</small>Steffo99</span>}/>
                     <LinkPanel me href={"https://fosstodon.org/@steffo"} icon={faMastodon} text={<span>@steffo<small>@fosstodon.org</small></span>}/>
-                    <LinkPanel fade icon={faTwitter} text={""}/>
+                    <LinkPanel me href={"https://old.reddit.com/user/steffo99"} icon={faRedditAlien} text={<span><small>/u/</small>Steffo99</span>}/>
+                    <LinkPanel me href={"https://github.com/Steffo99"} icon={faGithub} text={"Steffo99"}/>
                     <LinkPanel me href={"https://stackoverflow.com/users/4334568/steffo"} icon={faStackOverflow} text={"Steffo"}/>
                     <LinkPanel me href={"https://www.linkedin.com/in/steffo45/"} icon={faLinkedin} text={"Stefano Pigozzi"}/>
                     <LinkPanel me href={"https://steamcommunity.com/profiles/76561198034314260/"} icon={faSteam} text={"Steffo"}/>
@@ -95,7 +94,7 @@ const Index: NextPage = () => {
                     Friends
                 </h3>
                 <p>
-                    You can check out my friends' websites here (in alphanumeric order):
+                    You can check out my friends' websites here:
                 </p>
                 <div className={"chapter-3"}>
                     <LinkPanel icon={faGlobe} text={"Gimbaro"} href={"https://gimbaro.dev/"}/>
