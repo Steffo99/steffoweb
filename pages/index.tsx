@@ -1,13 +1,19 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {useRouter} from "next/router"
 import React from 'react'
 import type {NextPage} from "next"
 import {default as Link} from "next/link"
 import {faRedditAlien, faMastodon, faGithub, faDiscord, faTelegram, faSteam, faItchIo, faTwitter, faLinkedin, faStackOverflow} from "@fortawesome/free-brands-svg-icons"
 import {faBorderAll, faEnvelope, faGlobe, faPlus, faFileCode, faBagShopping} from "@fortawesome/free-solid-svg-icons"
 import {LinkPanel} from "../components/LinkPanel"
+import {useKonamiCode} from "../hooks/useKonamiCode"
 
 
 const Index: NextPage = () => {
+    const router = useRouter()
+
+    useKonamiCode(() => router.push("/garasauto"))
+
     return <>
         <div className={"chapter-1"}>
             <section className={"panel box"}>
