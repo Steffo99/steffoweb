@@ -17,8 +17,8 @@ footer {
 }
 
 .panel {
-  min-width: 500px;
   max-width: 500px;
+  flex-basis: 100%;
 }
 
 .panel .panel {
