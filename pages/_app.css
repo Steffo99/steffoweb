@@ -16,9 +16,12 @@ footer {
   text-shadow: 2px 2px 4px hsl(var(--bhsl-background-hue) var(--bhsl-background-saturation) var(--bhsl-background-lightness));
 }
 
+section {
+  flex-basis: 100%;
+}
+
 .panel {
   max-width: 500px;
-  flex-basis: 100%;
 }
 
 .panel .panel {

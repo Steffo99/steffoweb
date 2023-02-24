@@ -108,6 +108,8 @@ const Index: NextPage = () => {
                     <LinkPanel icon={faGlobe} text={"Malbyx"} href={"https://about.malbyx.tk/"}/>
                     <LinkPanel icon={faGlobe} text={"Nemesis"} href={"https://www.fermitech.info/"}/>
                     <LinkPanel icon={faGlobe} text={"SnowyCoder"} href={"https://rossilorenzo.dev/"}/>
+                    <LinkPanel icon={faGlobe} text={"Proto"} href={"https://fabiodesim.one/"}/>
+                    <LinkPanel icon={faGlobe} text={"Viktya"} href={"https://viktya.github.io/"}/>
                     <div className={"panel fade"}>
                         <span><FontAwesomeIcon icon={faPlus}/> And more!</span>
                     </div>
