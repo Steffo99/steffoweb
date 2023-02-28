@@ -1,6 +1,9 @@
 .linkPanel {
-    text-decoration: none;
     white-space: nowrap;
+
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
 }
 
 .linkPanel:hover, .linkPanel:focus {
@@ -9,4 +12,15 @@
 
 .linkPanel:active {
     --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 40%);
+}
+
+.linkPanelIcon {
+    justify-self: center;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.linkPanelText {
+    flex-grow: 1;
+    justify-self: flex-start;
 }
