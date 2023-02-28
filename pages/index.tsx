@@ -133,7 +133,7 @@ const Index: NextPage = () => {
                     <LinkPanel icon={faShieldAlt} text={"uBlock Origin"} href={"https://ublockorigin.com"}/>
                 </div>
                 <p>
-                    Additionally, if you are technically-inclined, consider setting up this on your network:
+                    Additionally, if you are technically inclined, consider setting up this on your network:
                 </p>
                 <div className={"chapter-1"}>
                     <LinkPanel icon={faShieldAlt} text={"Pi-Hole"} href={"https://pi-hole.net"}/>
