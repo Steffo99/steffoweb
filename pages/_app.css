@@ -39,6 +39,7 @@ section {
 
 #__next {
   min-height: 100vh;
+  padding: 0 8px;
 
   display: flex;
   flex-direction: column;
