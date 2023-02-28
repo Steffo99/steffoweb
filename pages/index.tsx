@@ -136,7 +136,7 @@ const Index: NextPage = () => {
                     Additionally, if you are technically-inclined, consider setting up this on your network:
                 </p>
                 <div className={"chapter-1"}>
-                    <LinkPanel icon={faShieldAlt} text={"PiHole"} href={"https://pi-hole.net"}/>
+                    <LinkPanel icon={faShieldAlt} text={"Pi-Hole"} href={"https://pi-hole.net"}/>
                 </div>
                 <small style={{fontSize: "x-small"}} className={"float-bottom"}>
                     I am not affiliated with the developers of this software, but I heavily recommend them to everyone!
