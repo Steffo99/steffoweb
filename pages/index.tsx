@@ -4,7 +4,7 @@ import React from 'react'
 import type {NextPage} from "next"
 import {default as Link} from "next/link"
 import {faRedditAlien, faMastodon, faGithub, faDiscord, faTelegram, faSteam, faItchIo, faTwitter, faLinkedin, faStackOverflow, faWikipediaW} from "@fortawesome/free-brands-svg-icons"
-import {faBorderAll, faEnvelope, faGlobe, faPlus, faFileCode, faBagShopping} from "@fortawesome/free-solid-svg-icons"
+import {faBorderAll, faEnvelope, faGlobe, faPlus, faFileCode, faBagShopping, faShieldAlt} from "@fortawesome/free-solid-svg-icons"
 import {LinkPanel} from "../components/LinkPanel"
 import {useKonamiCode} from "../hooks/useKonamiCode"
 
@@ -117,6 +117,29 @@ const Index: NextPage = () => {
                 </div>
                 <small style={{fontSize: "x-small"}} className={"float-bottom"}>
                     Hey friends, please make a small personal website, so I can add you here! <span aria-hidden>:D</span>
+                </small>
+            </section>
+            <section className={"panel box home-ad"} id={"panel-adblocker"}>
+                <h3>
+                    Fake advertisement
+                </h3>
+                <p>
+                    Hey! You're browsing the Internet without an ad-blocker!
+                </p>
+                <p>
+                    For your safety and better browser performance, you should install:
+                </p>
+                <div className={"chapter-1"}>
+                    <LinkPanel icon={faShieldAlt} text={"uBlock Origin"} href={"https://ublockorigin.com"}/>
+                </div>
+                <p>
+                    Additionally, if you are technically-inclined, consider setting up this on your network:
+                </p>
+                <div className={"chapter-1"}>
+                    <LinkPanel icon={faShieldAlt} text={"PiHole"} href={"https://pi-hole.net"}/>
+                </div>
+                <small style={{fontSize: "x-small"}} className={"float-bottom"}>
+                    I am not affiliated with neither of these software, but I heavily recommend them to anyone!
                 </small>
             </section>
         </div>
