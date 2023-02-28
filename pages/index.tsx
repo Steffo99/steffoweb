@@ -139,7 +139,7 @@ const Index: NextPage = () => {
                     <LinkPanel icon={faShieldAlt} text={"PiHole"} href={"https://pi-hole.net"}/>
                 </div>
                 <small style={{fontSize: "x-small"}} className={"float-bottom"}>
-                    I am not affiliated with neither of these software, but I heavily recommend them to anyone!
+                    I am not affiliated with the developers of this software, but I heavily recommend them to everyone!
                 </small>
             </section>
         </div>
