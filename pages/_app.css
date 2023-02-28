@@ -6,6 +6,12 @@
 @import 'node_modules/@steffo/bluelib/dist/fun.root.css';
 @import 'node_modules/@fortawesome/fontawesome-svg-core/styles.css';
 
+body {
+  background-image: url("/space_default.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #__next {
   min-height: 100vh;
   padding: 0 8px;
@@ -14,12 +20,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-#__next body {
-  background-image: url("/space_default.jpg");
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 #__next footer {
