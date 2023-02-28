@@ -6,37 +6,6 @@
 @import 'node_modules/@steffo/bluelib/dist/fun.root.css';
 @import 'node_modules/@fortawesome/fontawesome-svg-core/styles.css';
 
-body {
-  background-image: url("/space_default.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-footer {
-  text-shadow: 2px 2px 4px hsl(var(--bhsl-background-hue) var(--bhsl-background-saturation) var(--bhsl-background-lightness));
-}
-
-section {
-  flex-basis: 100%;
-}
-
-.panel {
-  max-width: 500px;
-}
-
-.panel .panel {
-  min-width: 0;
-}
-
-.chapter-no-header-margin h1,
-.chapter-no-header-margin h2,
-.chapter-no-header-margin h3,
-.chapter-no-header-margin h4,
-.chapter-no-header-margin h5,
-.chapter-no-header-margin h6 {
-  margin-top: 0 !important;
-}
-
 #__next {
   min-height: 100vh;
   padding: 0 8px;
@@ -45,4 +14,25 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+#__next body {
+  background-image: url("/space_default.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#__next footer {
+  text-shadow: 2px 2px 4px hsl(var(--bhsl-background-hue) var(--bhsl-background-saturation) var(--bhsl-background-lightness));
+}
+
+#__next section {
+  flex-basis: 500px;
+  flex-grow: 0;
+}
+
+@media screen and (max-width: 516px) {
+  #__next section {
+    flex-basis: 100%;
+  }
 }
