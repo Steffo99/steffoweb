@@ -61,7 +61,7 @@ const Index: NextPage = () => {
                     Please <em>do not</em> send me chat messages about <i>Greed</i>, <Link href={"https://github.com/Steffo99/greed/issues/new/choose"}>open an issue</Link> instead!
                 </small>
             </section>
-            <section className={"panel box"}>
+            <section className={"panel box"} id={"panel-projects"}>
                 <h3>
                     My projects
                 </h3>
@@ -95,7 +95,7 @@ const Index: NextPage = () => {
                     There are more on <Link href={"https://github.com/Steffo99?tab=repositories"}>my GitHub profile</Link>!
                 </small>
             </section>
-            <section className={"panel box"}>
+            <section className={"panel box"} id={"panel-friends"}>
                 <h3>
                     Friends
                 </h3>
