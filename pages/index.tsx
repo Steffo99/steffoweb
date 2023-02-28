@@ -3,7 +3,7 @@ import {useRouter} from "next/router"
 import React from 'react'
 import type {NextPage} from "next"
 import {default as Link} from "next/link"
-import {faRedditAlien, faMastodon, faGithub, faDiscord, faTelegram, faSteam, faItchIo, faTwitter, faLinkedin, faStackOverflow} from "@fortawesome/free-brands-svg-icons"
+import {faRedditAlien, faMastodon, faGithub, faDiscord, faTelegram, faSteam, faItchIo, faTwitter, faLinkedin, faStackOverflow, faWikipediaW} from "@fortawesome/free-brands-svg-icons"
 import {faBorderAll, faEnvelope, faGlobe, faPlus, faFileCode, faBagShopping} from "@fortawesome/free-solid-svg-icons"
 import {LinkPanel} from "../components/LinkPanel"
 import {useKonamiCode} from "../hooks/useKonamiCode"
@@ -45,6 +45,7 @@ const Index: NextPage = () => {
                     <LinkPanel me href={"https://github.com/Steffo99"} icon={faGithub} text={"Steffo99"}/>
                     <LinkPanel me href={"https://stackoverflow.com/users/4334568/steffo"} icon={faStackOverflow} text={"Steffo"}/>
                     <LinkPanel me href={"https://www.linkedin.com/in/steffo45/"} icon={faLinkedin} text={"Stefano Pigozzi"}/>
+                    <LinkPanel me href={"https://en.wikipedia.org/wiki/User:Steffo99"} icon={faWikipediaW} text={"Steffo99"}/>
                     <LinkPanel me href={"https://steamcommunity.com/profiles/76561198034314260/"} icon={faSteam} text={"Steffo"}/>
                     <LinkPanel me href={"https://steffo.itch.io/"} icon={faItchIo} text={"Steffo"}/>
                 </div>
