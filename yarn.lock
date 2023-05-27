@@ -262,10 +262,10 @@
     "@sentry/cli" "^1.74.6"
     webpack-sources "^2.0.0 || ^3.0.0"
 
-"@steffo/bluelib@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@steffo/bluelib/-/bluelib-7.0.0.tgz#3ba273ecf6dd5175c3c5a9e6c0ea12d9807d92b4"
-  integrity sha512-kLwbLswtdvRx3lcudmSgD5zzIhlpGcjvpB42XANHaXH3M4zpzGy5FIUeFJMjssXGcHBx/iTAV+lHWmopRZK/kQ==
+"@steffo/bluelib@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@steffo/bluelib/-/bluelib-9.0.1.tgz#15932995ab67ff1b959601036042cd2f14c4d197"
+  integrity sha512-r6/38m0LuapcF5Fung5yjITTcXNoWf03I5C2b4dBDGjt7IqBAiaoBbLsRcChZ5hRRn32TJO10yuDlgsPNwLhAg==
 
 "@swc/helpers@0.4.11":
   version "0.4.11"
