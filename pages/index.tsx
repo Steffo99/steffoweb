@@ -3,7 +3,7 @@ import {useRouter} from "next/router"
 import React from 'react'
 import type {NextPage} from "next"
 import {default as Link} from "next/link"
-import {faRedditAlien, faMastodon, faGithub, faDiscord, faTelegram, faSteam, faItchIo, faTwitter, faLinkedin, faStackOverflow, faWikipediaW} from "@fortawesome/free-brands-svg-icons"
+import {faRedditAlien, faMastodon, faGithub, faDiscord, faTelegram, faSteam, faItchIo, faLinkedin, faStackOverflow, faWikipediaW} from "@fortawesome/free-brands-svg-icons"
 import {faBorderAll, faEnvelope, faGlobe, faPlus, faFileCode, faBagShopping, faShieldAlt} from "@fortawesome/free-solid-svg-icons"
 import {LinkPanel} from "../components/LinkPanel"
 import {useKonamiCode} from "../hooks/useKonamiCode"
