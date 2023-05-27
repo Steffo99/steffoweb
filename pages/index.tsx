@@ -21,7 +21,7 @@ const Index: NextPage = () => {
                     About me
                 </h3>
                 <p>
-                    I'm <dfn>Stefano Pigozzi</dfn>, a Computer Science graduate and <b>Master's student</b> at <Link href={"https://www.unimore.it/"}>Unimore</Link>!
+                    I'm <dfn>Stefano Pigozzi</dfn>, an Italian Computer Science graduate and <b>Master's student</b> at <Link href={"https://www.unimore.it/"}>Unimore</Link>!
                 </p>
                 <p>
                     When I'm not studying, I <b>contribute to open source</b>, <b>play video games</b>, and <b>eat tons of gelato</b>!
