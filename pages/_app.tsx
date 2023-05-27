@@ -20,7 +20,7 @@ const App = ({Component, pageProps}: AppProps) => {
             <Component {...pageProps}/>
         </main>
         <footer>
-            © {new Date().getFullYear()} Stefano Pigozzi | <Link href={"https://github.com/Steffo99/steffoweb-2021"}>Source code</Link>
+            © {new Date().getFullYear()} Stefano Pigozzi | <Link href={"https://github.com/Steffo99/steffoweb"}>Source code</Link>
         </footer>
     </>
 }
