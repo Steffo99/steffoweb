@@ -1,38 +1,9 @@
 @import 'node_modules/@steffo/bluelib/dist/base.root.css';
 @import 'node_modules/@steffo/bluelib/dist/colors-royalblue.root.css';
 @import 'node_modules/@steffo/bluelib/dist/fonts-fira-ghpages.root.css';
+@import 'node_modules/@steffo/bluelib/dist/layouts-center.root.css';
+@import 'node_modules/@steffo/bluelib/dist/layouts-flex.root.css';
 @import 'node_modules/@steffo/bluelib/dist/classic.root.css';
 @import 'node_modules/@steffo/bluelib/dist/glass.root.css';
 @import 'node_modules/@steffo/bluelib/dist/fun.root.css';
 @import 'node_modules/@fortawesome/fontawesome-svg-core/styles.css';
-
-body {
-  background-image: url("/space_default.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#__next {
-  min-height: 100vh;
-  padding: 0 8px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#__next footer {
-  text-shadow: 2px 2px 4px hsl(var(--bhsl-background-hue) var(--bhsl-background-saturation) var(--bhsl-background-lightness));
-}
-
-#__next section {
-  flex-basis: 500px;
-  flex-grow: 0;
-}
-
-@media screen and (max-width: 516px) {
-  #__next section {
-    flex-basis: 100%;
-  }
-}
