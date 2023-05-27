@@ -15,20 +15,32 @@ const Index: NextPage = () => {
     useKonamiCode(() => router.push("/garasauto"))
 
     return <>
-        <div className={"chapter-1"}>
-            <section className={"panel box"}>
+        <div className={"chapter-2"}>
+            <section className={"panel box"} id={"panel-about"}>
                 <h3>
                     About me
                 </h3>
                 <p>
                     I'm <dfn>Stefano Pigozzi</dfn>, an Italian Computer Science graduate and <b>Master's student</b> at <Link href={"https://www.unimore.it/"}>Unimore</Link>!
                 </p>
+            </section>
+            <section className={"panel box"} id={"panel-interests"}>
+                <h3>
+                    My interests
+                </h3>
                 <p>
-                    When I'm not studying, I <b>contribute to open source</b>, <b>play video games</b>, and <b>eat tons of gelato</b>!
+                    I'm interested in how to improve the interactions between people via technology.
                 </p>
                 <p>
-                    I'm also somewhat interested in the <b>social mechanisms of the Internet</b>, specifically in how platforms influence how people interact with each other online.
+                    For that reason, I enjoy using, exploring, studying and developing:
                 </p>
+                <ul>
+                    <li>social applications;</li>
+                    <li>chat applications and automations;</li>
+                    <li>multiplayer videogames;</li>
+                    <li>websites;</li>
+                    <li>and Internet protocols in general!</li>
+                </ul>
             </section>
         </div>
         <div className={"chapter-2"}>
@@ -66,9 +78,6 @@ const Index: NextPage = () => {
                 <h3>
                     My projects
                 </h3>
-                <p>
-                    You might be interested in one of my released projects:
-                </p>
                 <div className={"chapter-3"}>
                     <LinkPanel href={"https://github.com/Steffo99/greed"} icon={faFileCode} text={"Greed"}/>
                     <LinkPanel href={"https://github.com/Steffo99/sophon"} icon={faFileCode} text={"Sophon"}/>
