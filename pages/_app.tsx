@@ -16,9 +16,9 @@ const App = ({Component, pageProps}: AppProps) => {
         <h1>
             <Image alt={""} src={imgSRound} style={{height: "48px", width: "48px", display: "inline-block", verticalAlign: "text-bottom"}}/> Steffo's website
         </h1>
-        <div>
+        <main>
             <Component {...pageProps}/>
-        </div>
+        </main>
         <footer>
             © {new Date().getFullYear()} Stefano Pigozzi | <Link href={"https://github.com/Steffo99/steffoweb-2021"}>Source code</Link>
         </footer>
