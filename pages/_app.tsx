@@ -14,7 +14,7 @@ config.autoAddCss = false
 const App = ({Component, pageProps}: AppProps) => {
     return <>
         <h1>
-            <Image alt={""} src={imgSRound} style={{height: "48px", width: "48px", display: "inline-block", verticalAlign: "text-bottom"}}/> Steffo's website
+            <Image alt={""} src={imgSRound} style={{height: "48px", width: "48px", display: "inline-block", verticalAlign: "text-bottom"}}/> Steffo
         </h1>
         <main>
             <Component {...pageProps}/>

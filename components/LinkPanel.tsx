@@ -10,18 +10,24 @@ export type LinkPanelProps = {
     href?: string,
     icon: IconProp,
     text: React.ReactNode,
+    description?: React.ReactNode,
     me?: boolean,
     fade?: boolean,
 }
 
 
-export const LinkPanel = ({href, icon, text, me, fade}: LinkPanelProps) => {
+export const LinkPanel = ({href, icon, text, description, me, fade}: LinkPanelProps) => {
     const panel = (
         <>
             <FontAwesomeIcon className={style.linkPanelIcon} icon={icon}/>
             <span className={style.linkPanelText}>
                 {text}
             </span>
+            {description &&
+                <small className={style.linkPanelDescription}>
+                    {description}
+                </small>
+            }
         </>
     )
 
@@ -36,7 +42,7 @@ export const LinkPanel = ({href, icon, text, me, fade}: LinkPanelProps) => {
     }
     else {
         return (
-            <div className={cn({panel: true, fade: fade})}>
+            <div className={cn({panel: true, [style.linkPanel]: true, fade: fade})} rel={me ? "me" : ""}>
                 {panel}
             </div>
         )

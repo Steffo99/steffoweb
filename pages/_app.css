@@ -1,9 +1,22 @@
 @import 'node_modules/@steffo/bluelib/dist/base.root.css';
-@import 'node_modules/@steffo/bluelib/dist/colors-royalblue.root.css';
-@import 'node_modules/@steffo/bluelib/dist/fonts-fira-ghpages.root.css';
 @import 'node_modules/@steffo/bluelib/dist/layouts-center.root.css';
 @import 'node_modules/@steffo/bluelib/dist/layouts-flex.root.css';
 @import 'node_modules/@steffo/bluelib/dist/classic.root.css';
 @import 'node_modules/@steffo/bluelib/dist/glass.root.css';
-@import 'node_modules/@steffo/bluelib/dist/fun.root.css';
+@import 'node_modules/@steffo/bluelib/dist/colors-royalblue.root.css';
+@import 'node_modules/@steffo/bluelib/dist/fonts-fira-ghpages.root.css';
 @import 'node_modules/@fortawesome/fontawesome-svg-core/styles.css';
+
+body .panel {
+    max-width: 476px;
+}
+
+body .panel .panel {
+    max-width: unset;
+}
+
+body .group-lp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}

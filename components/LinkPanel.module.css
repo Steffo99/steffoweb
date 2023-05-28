@@ -1,26 +1,50 @@
 .linkPanel {
-    white-space: nowrap;
+    display: grid;
+    grid-template-areas:
+        "icon text"
+        "desc desc"
+    ;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
 
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
+    grid-row-gap: 0;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    flex-basis: calc(50% - 4px);
+    flex-grow: 1;
 }
 
-.linkPanel:hover, .linkPanel:focus {
+@media (max-width: 492px) {
+    .linkPanel {
+        width: 100%;
+    }
+}
+
+.linkPanel[href]:hover, .linkPanel[href]:focus {
     --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 20%);
 }
 
-.linkPanel:active {
+.linkPanel[href]:active {
     --bhsl-current-lightness: calc(var(--bhsl-link-lightness) + 40%);
 }
 
 .linkPanelIcon {
+    grid-area: icon;
     justify-self: center;
+    align-self: center;
     width: 20px;
-    flex-shrink: 0;
 }
 
 .linkPanelText {
-    flex-grow: 1;
-    justify-self: flex-start;
+    grid-area: text;
+    align-self: center;
+    text-decoration: 1px solid underline currentColor;
+}
+
+.linkPanelDescription {
+    grid-area: desc;
+    white-space: normal;
+    align-self: start;
 }
