@@ -7,15 +7,15 @@
 @import 'node_modules/@steffo/bluelib/dist/fonts-fira-ghpages.root.css';
 @import 'node_modules/@fortawesome/fontawesome-svg-core/styles.css';
 
-body .panel {
+.panel {
     max-width: 476px;
 }
 
-body .panel .panel {
+.panel .panel {
     max-width: unset;
 }
 
-body .group-lp {
+.group-lp {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;

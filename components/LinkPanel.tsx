@@ -13,10 +13,11 @@ export type LinkPanelProps = {
     description?: React.ReactNode,
     me?: boolean,
     fade?: boolean,
+    onPress?: React.EventHandler<React.SyntheticEvent<HTMLElement>>
 }
 
 
-export const LinkPanel = ({href, icon, text, description, me, fade}: LinkPanelProps) => {
+export const LinkPanel = ({href, icon, text, description, me, fade, onPress}: LinkPanelProps) => {
     const panel = (
         <>
             <FontAwesomeIcon className={style.linkPanelIcon} icon={icon}/>
@@ -34,7 +35,7 @@ export const LinkPanel = ({href, icon, text, description, me, fade}: LinkPanelPr
     if(href) {
         return (
             <Link href={href}>
-                <a className={cn({panel: true, [style.linkPanel]: true, fade: fade})} rel={me ? "me" : ""}>
+                <a className={cn({panel: true, [style.linkPanel]: true, fade: fade})} rel={me ? "me" : ""} onClick={onPress} onKeyPress={onPress}>
                     {panel}
                 </a>
             </Link>
@@ -42,7 +43,7 @@ export const LinkPanel = ({href, icon, text, description, me, fade}: LinkPanelPr
     }
     else {
         return (
-            <div className={cn({panel: true, [style.linkPanel]: true, fade: fade})} rel={me ? "me" : ""}>
+            <div className={cn({panel: true, [style.linkPanel]: true, fade: fade})} onClick={onPress} onKeyPress={onPress}>
                 {panel}
             </div>
         )
