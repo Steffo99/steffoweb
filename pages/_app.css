@@ -7,8 +7,16 @@
 @import 'node_modules/@steffo/bluelib/dist/fonts-fira-ghpages.root.css';
 @import 'node_modules/@fortawesome/fontawesome-svg-core/styles.css';
 
-.panel {
-    max-width: 476px;
+@media (max-width: 492px) {
+    .panel {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 492px) {
+    .panel {
+        max-width: 476px;
+    }
 }
 
 .panel .panel {

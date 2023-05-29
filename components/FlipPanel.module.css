@@ -1,6 +1,16 @@
-.flipPanelContainer {
-    max-width: 476px;
+@media (max-width: 492px) {
+    .flipPanelContainer {
+        max-width: 100%;
+    }
+}
 
+@media (min-width: 492px) {
+    .flipPanelContainer {
+        max-width: 476px;
+    }
+}
+
+.flipPanelContainer {
     display: flex;
     justify-content: stretch;
     align-items: stretch;
