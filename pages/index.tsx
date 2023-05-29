@@ -6,6 +6,7 @@ import {faMastodon, faGithub, faDiscord, faSteam, faItchIo, faLinkedin, faStackO
 import {faBorderAll, faEnvelope, faGlobe, faUser, faPlus, faCashRegister, faShieldAlt, faDiagramProject, faPaintRoller, faBookAtlas, faGamepad, faPaintbrush, faArrowLeft, faCog, faFloppyDisk, faScissors, faShield} from "@fortawesome/free-solid-svg-icons"
 import {FlipPanel} from "../components/FlipPanel"
 import {LinkPanel} from "../components/LinkPanel"
+import {ProjectsList} from "../components/ProjectsList"
 import {useKonamiCode} from "../hooks/useKonamiCode"
 
 
@@ -41,7 +42,7 @@ const Index: NextPage = () => {
                 </p>
             </section>
         </div>
-        <div className={"chapter-2"}>
+        <div className={"chapter-3"}>
             <FlipPanel
                 className={"box"}
                 front={(flip) => <>
@@ -52,7 +53,7 @@ const Index: NextPage = () => {
                         Often, while experimenting with a new technology, I notice something that can be improved, and I try to come up with a solution to it.
                     </p>
                     <p>
-                        Over time, I've created lots of small projects, some which have succeeded, and some which have unfortunately failed <small>(or have been abandoned due to a lack of time)</small>.
+                        Over time, I've created lots of small projects, some which have succeeded in their goal, and some which have unfortunately failed <small>(or have been abandoned due to a lack of time)</small>.
                     </p>
                     <hr className={"float-bottom"}/>
                     <p>
@@ -104,7 +105,7 @@ const Index: NextPage = () => {
                         <LinkPanel
                             href={"https://github.com/Steffo99/backup-duplicity"}
                             icon={faFloppyDisk}
-                            text={"docker-backup-duplicity"}
+                            text={"backup-duplicity"}
                             description={"Pluggable Docker-based backups"}
                         />
                         <LinkPanel
@@ -123,22 +124,23 @@ const Index: NextPage = () => {
                             href={"javascript:void(0)"}
                             icon={faDiagramProject}
                             text={"View all my projects"}
-                            description={"There are many more projects there!"}
+                            description={"There's a lot of stuff there!"}
                             onPress={flip}
                         />
                     </div>
                 </>}
                 back={(flip) => <>
                     <h3>
-                        My projects
+                        All my projects
                     </h3>
+                    <ProjectsList/>
                     <hr className={"float-bottom"}/>
                     <div className={"group-lp"}>
                         <LinkPanel
                             href={"javascript:void(0)"}
                             icon={faArrowLeft}
                             text={"Go back"}
-                            description={"I have seen enough"}
+                            description={"That's too much for me..."}
                             onPress={flip}
                         />
                     </div>
@@ -157,7 +159,9 @@ const Index: NextPage = () => {
                     <p>
                         Apart from experimentation, I'm currently the most active on the Fediverse, in particular on:
                     </p>
-                    <LinkPanel href={"/projects"} icon={faMastodon} text={"Mastodon"} description={"@steffo@fosstodon.org"}/>
+                    <div className={"group-lp"}>
+                        <LinkPanel href={"/projects"} icon={faMastodon} text={"Mastodon"} description={"@steffo@fosstodon.org"}/>
+                    </div>
                     <hr className={"float-bottom"}/>
                     <p>
                         Other services I often use are:
@@ -222,17 +226,18 @@ const Index: NextPage = () => {
                     <p>
                         If you want to find me on some other service, please:
                     </p>
-                    <LinkPanel
-                        href={"javascript:void(0)"}
-                        icon={faUser}
-                        text={"View all my accounts"}
-                        description={"I've started keeping track only recently..."}
-                        onPress={flip}
-                    />
+                    <div className={"group-lp"}>
+                        <LinkPanel
+                            fade
+                            icon={faUser}
+                            text={"View all my accounts"}
+                            description={"Coming soon..."}
+                        />
+                    </div>
                 </>}
                 back={(flip) => <>
                     <h3>
-                        My accounts
+                        All my accounts
                     </h3>
                     <hr className={"float-bottom"}/>
                     <div className={"group-lp"}>
@@ -246,8 +251,6 @@ const Index: NextPage = () => {
                     </div>
                 </>}
             />
-        </div>
-        <div className={"chapter-2"}>
             <section className={"panel box"} id={"panel-friends"}>
                 <h3>
                     My friends
@@ -313,12 +316,14 @@ const Index: NextPage = () => {
                 <p>
                     Hey friends! If you make a website, please let me know:
                 </p>
-                <LinkPanel
-                    icon={faPlus}
-                    text={"Made a website?"}
-                    fade
-                    description={"Tell me about it!"}
-                />
+                <div className={"group-lp"}>
+                    <LinkPanel
+                        icon={faPlus}
+                        text={"Made a website?"}
+                        fade
+                        description={"Tell me about it!"}
+                    />
+                </div>
             </section>
             <section className={"panel box home-ad"} id={"panel-adblocker"}>
                 <h3>

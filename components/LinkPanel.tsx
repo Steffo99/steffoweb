@@ -11,22 +11,34 @@ export type LinkPanelProps = {
     icon: IconProp,
     text: React.ReactNode,
     description?: React.ReactNode,
+    extraTop?: React.ReactNode,
+    extraBtm?: React.ReactNode,
     me?: boolean,
     fade?: boolean,
     onPress?: React.EventHandler<React.SyntheticEvent<HTMLElement>>
 }
 
 
-export const LinkPanel = ({href, icon, text, description, me, fade, onPress}: LinkPanelProps) => {
+export const LinkPanel = ({href, icon, text, description, extraTop, extraBtm, me, fade, onPress}: LinkPanelProps) => {
     const panel = (
         <>
             <FontAwesomeIcon className={style.linkPanelIcon} icon={icon}/>
             <span className={style.linkPanelText}>
                 {text}
             </span>
+            {extraTop &&
+                <span className={style.linkPanelExtraTop}>
+                    {extraTop}
+                </span>
+            }
             {description &&
                 <small className={style.linkPanelDescription}>
                     {description}
+                </small>
+            }
+            {extraBtm !== undefined &&
+                <small className={style.linkPanelExtraBtm}>
+                    {extraBtm}
                 </small>
             }
         </>

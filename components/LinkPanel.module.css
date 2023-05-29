@@ -1,12 +1,13 @@
 .linkPanel {
     display: grid;
     grid-template-areas:
-        "icon text"
-        "desc desc"
+        "icon text ext1"
+        "desc desc ext2"
     ;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: auto 1fr;
 
+    grid-column-gap: 0;
     grid-row-gap: 0;
 
     white-space: nowrap;
@@ -35,6 +36,7 @@
     justify-self: center;
     align-self: center;
     width: 20px;
+    margin-right: 4px;
 }
 
 .linkPanelText {
@@ -47,4 +49,14 @@
     grid-area: desc;
     white-space: normal;
     align-self: start;
+}
+
+.linkPanelExtraTop {
+    grid-area: ext1;
+    align-self: end;
+}
+
+.linkPanelExtraBtm {
+    grid-area: ext2;
+    align-self: end;
 }
