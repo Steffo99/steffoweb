@@ -2,8 +2,8 @@ import {useRouter} from "next/router"
 import React from 'react'
 import type {NextPage} from "next"
 import {default as Link} from "next/link"
-import {faMastodon, faGithub, faDiscord, faSteam, faItchIo, faLinkedin, faStackOverflow} from "@fortawesome/free-brands-svg-icons"
-import {faBorderAll, faEnvelope, faGlobe, faUser, faPlus, faCashRegister, faShieldAlt, faDiagramProject, faPaintRoller, faBookAtlas, faGamepad, faPaintbrush, faArrowLeft, faCog, faFloppyDisk, faScissors, faShield} from "@fortawesome/free-solid-svg-icons"
+import {faGithub, faDiscord, faSteam, faItchIo, faLinkedin, faStackOverflow} from "@fortawesome/free-brands-svg-icons"
+import {faBorderAll, faEnvelope, faGlobe, faUser, faPlus, faCashRegister, faShieldAlt, faDiagramProject, faPaintRoller, faBookAtlas, faGamepad, faPaintbrush, faArrowLeft, faCog, faFloppyDisk, faScissors, faShield, faCircleNodes} from "@fortawesome/free-solid-svg-icons"
 import {FlipPanel} from "../components/FlipPanel"
 import {LinkPanel} from "../components/LinkPanel"
 import {ProjectsList} from "../components/ProjectsList"
@@ -160,7 +160,7 @@ const Index: NextPage = () => {
                         Apart from experimentation, I'm currently the most active on the Fediverse, in particular on:
                     </p>
                     <div className={"group-lp"}>
-                        <LinkPanel href={"/projects"} icon={faMastodon} text={"Mastodon"} description={"@steffo@fosstodon.org"}/>
+                        <LinkPanel href={"https://uno.starshard.studio/@steffo"} icon={faCircleNodes} text={"Fediverse"} description={"@steffo@uno.starshard.studio"}/>
                     </div>
                     <hr className={"float-bottom"}/>
                     <p>
