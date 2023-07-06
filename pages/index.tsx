@@ -319,8 +319,8 @@ const Index: NextPage = () => {
                 <div className={"group-lp"}>
                     <LinkPanel
                         icon={faPlus}
-                        text={"Made a website?"}
-                        fade
+                        text={"Made something?"}
+                        href={"mailto:imadeawebsite@steffo.eu"}
                         description={"Tell me about it!"}
                     />
                 </div>
