@@ -3,7 +3,7 @@ import React from 'react'
 import type {NextPage} from "next"
 import {default as Link} from "next/link"
 import {faGithub, faDiscord, faSteam, faItchIo, faLinkedin, faStackOverflow} from "@fortawesome/free-brands-svg-icons"
-import {faBorderAll, faEnvelope, faGlobe, faComment, faPlus, faCashRegister, faShieldAlt, faDiagramProject, faPaintRoller, faBookAtlas, faGamepad, faPaintbrush, faArrowLeft, faCog, faFloppyDisk, faScissors, faShield, faCircleNodes} from "@fortawesome/free-solid-svg-icons"
+import {faBorderAll, faEnvelope, faGlobe, faPlus, faCashRegister, faShieldAlt, faDiagramProject, faPaintRoller, faBookAtlas, faGamepad, faPaintbrush, faArrowLeft, faCog, faFloppyDisk, faScissors, faShield, faCircleNodes} from "@fortawesome/free-solid-svg-icons"
 import {FlipPanel} from "../components/FlipPanel"
 import {LinkPanel} from "../components/LinkPanel"
 import {ProjectsList} from "../components/ProjectsList"
