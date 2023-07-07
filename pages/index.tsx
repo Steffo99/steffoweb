@@ -180,7 +180,7 @@ const Index: NextPage = () => {
                 </div>
                 <div className={"group-lp"}>
                     <LinkPanel
-                        href={"https://www.linkedin.com/in/steffo45/"}
+                        href={"https://matrix.to/#/@steffo:ryg.one?via=ryg.one"}
                         icon={faBorderAll}
                         text={"Matrix"}
                         description={"@steffo:ryg.one"}
