@@ -189,7 +189,7 @@ const Index: NextPage = () => {
                         href={"https://discord.com/users/77703771181817856"}
                         icon={faDiscord}
                         text={"Discord"}
-                        description={"Steffo#4036"}
+                        description={"steffo"}
                     />
                 </div>
                 <div className={"group-lp"}>
