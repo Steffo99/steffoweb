@@ -146,111 +146,81 @@ const Index: NextPage = () => {
                     </div>
                 </>}
             />
-            <FlipPanel
-                className={"box"}
-                front={(flip) => <>
-                    <h3>
-                        Me on the Internet
-                    </h3>
-                    <p>
-                        I sign up to basically any website I stumble upon to explore and study its functions, mechanisms, culture and community, so don't be surprised if you see me somewhere!
-                    </p>
-                    <hr/>
-                    <p>
-                        Apart from experimentation, I'm currently the most active on the Fediverse, in particular on:
-                    </p>
-                    <div className={"group-lp"}>
-                        <LinkPanel href={"https://uno.starshard.studio/@steffo"} icon={faCircleNodes} text={"Star Shard Social"} description={"@steffo@uno.starshard.studio"}/>
-                    </div>
-                    <hr className={"float-bottom"}/>
-                    <p>
-                        Other services I often use are:
-                    </p>
-                    <div className={"group-lp"}>
-                        <LinkPanel
-                            href={"https://github.com/Steffo99"}
-                            icon={faGithub}
-                            text={"GitHub"}
-                            description={"Steffo99"}
-                        />
-                        <LinkPanel
-                            href={"https://stackoverflow.com/users/4334568/steffo"}
-                            icon={faStackOverflow}
-                            text={"Stack Overflow"}
-                            description={"Steffo"}
-                        />
-                    </div>
-                    <div className={"group-lp"}>
-                        <LinkPanel
-                            href={"https://www.linkedin.com/in/steffo45/"}
-                            icon={faBorderAll}
-                            text={"Matrix"}
-                            description={"@steffo:ryg.one"}
-                        />
-                        <LinkPanel
-                            href={"https://discord.com/users/77703771181817856"}
-                            icon={faDiscord}
-                            text={"Discord"}
-                            description={"Steffo#4036"}
-                        />
-                    </div>
-                    <div className={"group-lp"}>
-                        <LinkPanel
-                            href={"https://www.linkedin.com/in/steffo45/"}
-                            icon={faLinkedin}
-                            text={"Linkedin"}
-                            description={"Stefano Pigozzi"}
-                        />
-                        <LinkPanel
-                            href={"mailto:me@steffo.eu"}
-                            icon={faEnvelope}
-                            text={"Email"}
-                            description={"me@steffo.eu"}
-                        />
-                    </div>
-                    <div className={"group-lp"}>
-                        <LinkPanel
-                            href={"https://steamcommunity.com/profiles/76561198034314260/"}
-                            icon={faSteam}
-                            text={"Steam"}
-                            description={"[U:1:74048532]"}
-                        />
-                        <LinkPanel
-                            href={"https://steffo.itch.io/"}
-                            icon={faItchIo}
-                            text={"Itch.io"}
-                            description={"Steffo"}
-                        />
-                    </div>
-                    <hr/>
-                    <p>
-                        Want to see what I've been thinking about lately?
-                    </p>
-                    <div className={"group-lp"}>
-                        <LinkPanel
-                            fade
-                            icon={faComment}
-                            text={"View my latest posts"}
-                            description={"Coming soon..."}
-                        />
-                    </div>
-                </>}
-                back={(flip) => <>
-                    <h3>
-                        All my accounts
-                    </h3>
-                    <hr className={"float-bottom"}/>
-                    <div className={"group-lp"}>
-                        <LinkPanel
-                            href={"javascript:void(0)"}
-                            icon={faArrowLeft}
-                            text={"Go back"}
-                            description={"I have seen enough"}
-                            onPress={flip}
-                        />
-                    </div>
-                </>}
-            />
+            <section className={"panel box"} id={"panel-accounts"}>
+                <h3>
+                    Me on the Internet
+                </h3>
+                <p>
+                    I sign up to basically any website I stumble upon to explore and study its functions, mechanisms, culture and community, so don't be surprised if you see me somewhere!
+                </p>
+                <hr className={"float-bottom"}/>
+                <p>
+                    I'm currently mostly active on the Fediverse, in particular on:
+                </p>
+                <div className={"group-lp"}>
+                    <LinkPanel href={"https://uno.starshard.studio/@steffo"} icon={faCircleNodes} text={"Star Shard Social"} description={"@steffo@uno.starshard.studio"}/>
+                </div>
+                <hr/>
+                <p>
+                    Other services I often use are:
+                </p>
+                <div className={"group-lp"}>
+                    <LinkPanel
+                        href={"https://github.com/Steffo99"}
+                        icon={faGithub}
+                        text={"GitHub"}
+                        description={"Steffo99"}
+                    />
+                    <LinkPanel
+                        href={"https://stackoverflow.com/users/4334568/steffo"}
+                        icon={faStackOverflow}
+                        text={"Stack Overflow"}
+                        description={"Steffo"}
+                    />
+                </div>
+                <div className={"group-lp"}>
+                    <LinkPanel
+                        href={"https://www.linkedin.com/in/steffo45/"}
+                        icon={faBorderAll}
+                        text={"Matrix"}
+                        description={"@steffo:ryg.one"}
+                    />
+                    <LinkPanel
+                        href={"https://discord.com/users/77703771181817856"}
+                        icon={faDiscord}
+                        text={"Discord"}
+                        description={"Steffo#4036"}
+                    />
+                </div>
+                <div className={"group-lp"}>
+                    <LinkPanel
+                        href={"https://www.linkedin.com/in/steffo45/"}
+                        icon={faLinkedin}
+                        text={"Linkedin"}
+                        description={"Stefano Pigozzi"}
+                    />
+                    <LinkPanel
+                        href={"mailto:me@steffo.eu"}
+                        icon={faEnvelope}
+                        text={"Email"}
+                        description={"me@steffo.eu"}
+                    />
+                </div>
+                <div className={"group-lp"}>
+                    <LinkPanel
+                        href={"https://steamcommunity.com/profiles/76561198034314260/"}
+                        icon={faSteam}
+                        text={"Steam"}
+                        description={"[U:1:74048532]"}
+                    />
+                    <LinkPanel
+                        href={"https://steffo.itch.io/"}
+                        icon={faItchIo}
+                        text={"Itch.io"}
+                        description={"Steffo"}
+                    />
+                </div>
+            </section>
             <section className={"panel box"} id={"panel-friends"}>
                 <h3>
                     My friends
