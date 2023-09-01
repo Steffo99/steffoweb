@@ -250,8 +250,8 @@ const Index: NextPage = () => {
                     <LinkPanel
                         icon={faGlobe}
                         text={"Malbyx"}
-                        href={"https://about.malbyx.tk/"}
-                        description={"malbyx.tk"}
+                        href={"https://malbyx.eu/it"}
+                        description={"malbyx.eu"}
                     />
                     <LinkPanel
                         icon={faGlobe}
