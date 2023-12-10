@@ -180,10 +180,10 @@ const Index: NextPage = () => {
                 </div>
                 <div className={"group-lp"}>
                     <LinkPanel
-                        href={"https://matrix.to/#/@steffo:ryg.one?via=ryg.one"}
+                        href={"https://matrix.to/#/@steffo:uniberry.info?via=uniberry.info"}
                         icon={faBorderAll}
                         text={"Matrix"}
-                        description={"@steffo:ryg.one"}
+                        description={"@steffo:uniberry.info"}
                     />
                     <LinkPanel
                         href={"https://discord.com/users/77703771181817856"}
