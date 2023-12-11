@@ -158,7 +158,7 @@ const Index: NextPage = () => {
                     I'm currently mostly active on the Fediverse, in particular on:
                 </p>
                 <div className={"group-lp"}>
-                    <LinkPanel href={"https://uno.starshard.studio/@steffo"} icon={faCircleNodes} text={"Star Shard Social"} description={"@steffo@uno.starshard.studio"}/>
+                    <LinkPanel href={"https://uno.starshard.studio/@steffo"} icon={faCircleNodes} text={"Star Shard Social"} description={"@steffo@uno.starshard.studio"} me/>
                 </div>
                 <hr/>
                 <p>
