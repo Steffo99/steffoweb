@@ -170,12 +170,14 @@ const Index: NextPage = () => {
                         icon={faGithub}
                         text={"GitHub"}
                         description={"Steffo99"}
+                        me
                     />
                     <LinkPanel
                         href={"https://stackoverflow.com/users/4334568/steffo"}
                         icon={faStackOverflow}
                         text={"Stack Overflow"}
                         description={"Steffo"}
+                        me
                     />
                 </div>
                 <div className={"group-lp"}>
@@ -184,12 +186,14 @@ const Index: NextPage = () => {
                         icon={faBorderAll}
                         text={"Matrix"}
                         description={"@steffo:uniberry.info"}
+                        me
                     />
                     <LinkPanel
                         href={"https://discord.com/users/77703771181817856"}
                         icon={faDiscord}
                         text={"Discord"}
                         description={"steffo"}
+                        me
                     />
                 </div>
                 <div className={"group-lp"}>
@@ -198,12 +202,14 @@ const Index: NextPage = () => {
                         icon={faLinkedin}
                         text={"Linkedin"}
                         description={"Stefano Pigozzi"}
+                        me
                     />
                     <LinkPanel
                         href={"mailto:me@steffo.eu"}
                         icon={faEnvelope}
                         text={"Email"}
                         description={"me@steffo.eu"}
+                        me
                     />
                 </div>
                 <div className={"group-lp"}>
@@ -212,12 +218,14 @@ const Index: NextPage = () => {
                         icon={faSteam}
                         text={"Steam"}
                         description={"[U:1:74048532]"}
+                        me
                     />
                     <LinkPanel
                         href={"https://steffo.itch.io/"}
                         icon={faItchIo}
                         text={"Itch.io"}
                         description={"Steffo"}
+                        me
                     />
                 </div>
             </section>
