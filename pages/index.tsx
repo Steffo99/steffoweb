@@ -173,6 +173,7 @@ const Index: NextPage = () => {
                         icon={faCircleNodes}
                         text={"Star Shard Uno"}
                         description={"@steffo@uno.starshard.studio"}
+                        me
                     />
                 </div>
                 <hr/>
@@ -185,26 +186,30 @@ const Index: NextPage = () => {
                         icon={faGithub}
                         text={"GitHub"}
                         description={"Steffo99"}
+                        me
                     />
                     <LinkPanel
                         href={"https://stackoverflow.com/users/4334568/steffo"}
                         icon={faStackOverflow}
                         text={"Stack Overflow"}
                         description={"Steffo"}
+                        me
                     />
                 </div>
                 <div className={"group-lp"}>
                     <LinkPanel
-                        href={"https://matrix.to/#/@steffo:ryg.one?via=ryg.one"}
+                        href={"https://matrix.to/#/@steffo:uniberry.info?via=uniberry.info"}
                         icon={faBorderAll}
                         text={"Matrix"}
-                        description={"@steffo:ryg.one"}
+                        description={"@steffo:uniberry.info"}
+                        me
                     />
                     <LinkPanel
                         href={"https://discord.com/users/77703771181817856"}
                         icon={faDiscord}
                         text={"Discord"}
                         description={"steffo"}
+                        me
                     />
                 </div>
                 <div className={"group-lp"}>
@@ -213,12 +218,14 @@ const Index: NextPage = () => {
                         icon={faLinkedin}
                         text={"Linkedin"}
                         description={"Stefano Pigozzi"}
+                        me
                     />
                     <LinkPanel
                         href={"mailto:me@steffo.eu"}
                         icon={faEnvelope}
                         text={"Email"}
                         description={"me@steffo.eu"}
+                        me
                     />
                 </div>
                 <div className={"group-lp"}>
@@ -227,12 +234,14 @@ const Index: NextPage = () => {
                         icon={faSteam}
                         text={"Steam"}
                         description={"[U:1:74048532]"}
+                        me
                     />
                     <LinkPanel
                         href={"https://steffo.itch.io/"}
                         icon={faItchIo}
                         text={"Itch.io"}
                         description={"Steffo"}
+                        me
                     />
                 </div>
             </section>
@@ -265,8 +274,8 @@ const Index: NextPage = () => {
                     <LinkPanel
                         icon={faGlobe}
                         text={"Malbyx"}
-                        href={"https://about.malbyx.tk/"}
-                        description={"malbyx.tk"}
+                        href={"https://malbyx.eu/it"}
+                        description={"malbyx.eu"}
                     />
                     <LinkPanel
                         icon={faGlobe}
