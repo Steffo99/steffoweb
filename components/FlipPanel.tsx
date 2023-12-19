@@ -19,14 +19,14 @@ export type FlipPanelProps = {
 
 export const FlipPanel = ({front, back, containerClassName, className, frontClassName, backClassName, containerProps, props, frontProps, backProps}: FlipPanelProps) => {
     const [isFront, setFront] = React.useState<boolean>(true)
-    const frontElement = React.useRef<HTMLElement>()
-    const backElement = React.useRef<HTMLElement>()
+    const frontElement = React.useRef<HTMLElement>(null)
+    const backElement = React.useRef<HTMLElement>(null)
 
     const flipToFront = React.useCallback(
         () => {
             setFront(true)
-            frontElement.current.inert = false
-            backElement.current.inert = true
+            if(frontElement.current) frontElement.current.inert = false
+            if(backElement.current) backElement.current.inert = true
         },
         [frontElement, backElement]
     )
@@ -34,8 +34,8 @@ export const FlipPanel = ({front, back, containerClassName, className, frontClas
     const flipToBack = React.useCallback(
         () => {
             setFront(false)
-            frontElement.current.inert = true
-            backElement.current.inert = false
+            if(frontElement.current) frontElement.current.inert = true
+            if(backElement.current) backElement.current.inert = false
         },
         [frontElement, backElement]
     )

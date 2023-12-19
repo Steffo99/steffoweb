@@ -59,7 +59,7 @@ export const LinkPanel = ({href, icon, text, description, extraTop, extraBtm, me
 
     if(href) {
         return (
-            <Link href={href}>
+            <Link legacyBehavior={true} href={href}>
                 <a className={cn({panel: true, [style.linkPanel]: true, fade: fade})} rel={me ? "me" : ""} onClick={onPress} onKeyPress={onPress} onMouseOver={onMouseOver}>
                     {panel}
                 </a>

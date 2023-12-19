@@ -1,9 +1,10 @@
-import {useRouter} from "next/router"
-import React from 'react'
-import type {NextPage} from "next"
+"use client";
+
+import {faDiscord, faGithub, faItchIo, faLinkedin, faStackOverflow, faSteam} from "@fortawesome/free-brands-svg-icons"
+import {faArrowLeft, faBookAtlas, faBorderAll, faCashRegister, faCircleNodes, faCog, faDiagramProject, faEnvelope, faFloppyDisk, faGamepad, faGlobe, faPaintbrush, faPaintRoller, faPlus, faScissors, faShield, faShieldAlt} from "@fortawesome/free-solid-svg-icons"
 import {default as Link} from "next/link"
-import {faGithub, faDiscord, faSteam, faItchIo, faLinkedin, faStackOverflow} from "@fortawesome/free-brands-svg-icons"
-import {faBorderAll, faEnvelope, faGlobe, faPlus, faCashRegister, faShieldAlt, faDiagramProject, faPaintRoller, faBookAtlas, faGamepad, faPaintbrush, faArrowLeft, faCog, faFloppyDisk, faScissors, faShield, faCircleNodes} from "@fortawesome/free-solid-svg-icons"
+import {useRouter} from "next/navigation"
+import React from "react"
 import {FlipPanel} from "../components/FlipPanel"
 import {LinkPanel} from "../components/LinkPanel"
 import {ProjectsList} from "../components/ProjectsList"
@@ -11,7 +12,7 @@ import {useGitHubRepositories} from "../hooks/useGitHubRepositories"
 import {useKonamiCode} from "../hooks/useKonamiCode"
 
 
-const Index: NextPage = () => {
+export default function RootPage() {
     const router = useRouter()
 
     const repos = useGitHubRepositories("Steffo99")
@@ -358,5 +359,3 @@ const Index: NextPage = () => {
         </div>
     </>
 }
-
-export default Index;
