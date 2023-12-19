@@ -7,12 +7,14 @@ import {faBorderAll, faEnvelope, faGlobe, faPlus, faCashRegister, faShieldAlt, f
 import {FlipPanel} from "../components/FlipPanel"
 import {LinkPanel} from "../components/LinkPanel"
 import {ProjectsList} from "../components/ProjectsList"
+import {useGitHubRepositories} from "../hooks/useGitHubRepositories"
 import {useKonamiCode} from "../hooks/useKonamiCode"
 
 
 const Index: NextPage = () => {
     const router = useRouter()
 
+    const repos = useGitHubRepositories("Steffo99")
     useKonamiCode(() => router.push("/garasauto"))
 
     return <>
@@ -125,7 +127,13 @@ const Index: NextPage = () => {
                             icon={faDiagramProject}
                             text={"View all my projects"}
                             description={"There's a lot of stuff there!"}
-                            onPress={flip}
+                            onMouseOver={() => {
+                                repos.load().then()
+                            }}
+                            onPress={() => {
+                                repos.load().then()
+                                flip()
+                            }}
                         />
                     </div>
                 </>}
@@ -133,7 +141,9 @@ const Index: NextPage = () => {
                     <h3>
                         All my projects
                     </h3>
-                    <ProjectsList/>
+                    <ProjectsList
+                        repos={repos.data}
+                    />
                     <hr className={"float-bottom"}/>
                     <div className={"group-lp"}>
                         <LinkPanel

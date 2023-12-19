@@ -40,12 +40,14 @@ export const FlipPanel = ({front, back, containerClassName, className, frontClas
         [frontElement, backElement]
     )
 
-    return <div className={cn(style.flipPanelContainer, containerClassName)} {...containerProps}>
-        <section ref={frontElement} className={cn("panel", style.flipPanel, style.flipPanelFront, {[style.flipPanelFrontVisible]: isFront}, className, frontClassName)} {...props} {...frontProps}>
-            {front(flipToBack)}
-        </section>
-        <section ref={backElement} className={cn("panel", style.flipPanel, style.flipPanelBack, {[style.flipPanelBackVisible]: !isFront}, className, backClassName)} {...props} {...backProps}>
-            {back(flipToFront)}
-        </section>
-    </div>
+    return (
+        <div className={cn(style.flipPanelContainer, containerClassName)} {...containerProps}>
+            <section ref={frontElement} className={cn("panel", style.flipPanel, style.flipPanelFront, {[style.flipPanelFrontVisible]: isFront}, className, frontClassName)} {...props} {...frontProps}>
+                {front(flipToBack)}
+            </section>
+            <section ref={backElement} className={cn("panel", style.flipPanel, style.flipPanelBack, {[style.flipPanelBackVisible]: !isFront}, className, backClassName)} {...props} {...backProps}>
+                {back(flipToFront)}
+            </section>
+        </div>
+    )
 }

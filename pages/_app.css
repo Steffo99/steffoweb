@@ -28,3 +28,7 @@
     flex-wrap: wrap;
     gap: 8px;
 }
+
+.lynx-only {
+    display: none;
+}

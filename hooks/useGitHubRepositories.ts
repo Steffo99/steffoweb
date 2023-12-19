@@ -4,9 +4,9 @@ import React from "react"
 export function useGitHubRepositories(user: string) {
     const [data, setData] = React.useState<any[]>([])
 
-    const fetchData = React.useCallback(
+    const load = React.useCallback(
         async () => {
-            setData([])
+            if(data.length > 0) return
             let page = 1;
             let count = 100;
             while(count == 100) {
@@ -17,16 +17,8 @@ export function useGitHubRepositories(user: string) {
                 setData((old) => [...old, ...data])
             }
         },
-        []
+        [data]
     )
 
-    React.useEffect(
-        () => {
-            // noinspection JSIgnoredPromiseFromCall
-            fetchData()
-        },
-        [fetchData]
-    )
-
-    return data
+    return {data, load}
 }
