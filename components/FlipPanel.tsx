@@ -1,4 +1,4 @@
-import React, {useCallback} from "react"
+import React from "react"
 import {default as cn} from "classnames";
 import {default as style} from "./FlipPanel.module.css"
 

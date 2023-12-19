@@ -1,5 +1,4 @@
 import {default as style} from "./ProjectsList.module.css"
-import {useGitHubRepositories} from "../hooks/useGitHubRepositories"
 import {LinkPanel} from "./LinkPanel"
 import {faBook, faCodeFork} from "@fortawesome/free-solid-svg-icons"
 
