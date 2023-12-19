@@ -69,24 +69,24 @@ const Index: NextPage = () => {
                             description={"Customizable web stylesheet"}
                         />
                         <LinkPanel
-                            href={"https://github.com/Steffo99/greed"}
-                            icon={faCashRegister}
-                            text={"Greed"}
-                            description={"Telegram store bot"}
+                            href={"https://steffo.itch.io/swear-jar"}
+                            icon={faGamepad}
+                            text={"Swear Jar"}
+                            description={"Game jam prototype"}
                         />
                     </div>
                     <div className={"group-lp"}>
                         <LinkPanel
                             href={"https://github.com/Steffo99/greed"}
+                            icon={faCashRegister}
+                            text={"Greed"}
+                            description={"Telegram store bot"}
+                        />
+                        <LinkPanel
+                            href={"https://github.com/Steffo99/sophon"}
                             icon={faBookAtlas}
                             text={"Sophon"}
                             description={"Research hub for universities"}
-                        />
-                        <LinkPanel
-                            href={"https://steffo.itch.io/pineapple-surf"}
-                            icon={faGamepad}
-                            text={"Pineapple Surf"}
-                            description={"Game jam prototype"}
                         />
                     </div>
                     <div className={"group-lp"}>
@@ -111,7 +111,7 @@ const Index: NextPage = () => {
                             description={"Pluggable Docker-based backups"}
                         />
                         <LinkPanel
-                            href={"https://steffo.itch.io/pineapple-surf"}
+                            href={"https://github.com/Steffo99/actions-semver"}
                             icon={faScissors}
                             text={"actions-semver"}
                             description={"GH Action for semver parsing"}
