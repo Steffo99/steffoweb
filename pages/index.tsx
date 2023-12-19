@@ -168,7 +168,12 @@ const Index: NextPage = () => {
                     I'm currently mostly active on the Fediverse, in particular on:
                 </p>
                 <div className={"group-lp"}>
-                    <LinkPanel href={"https://uno.starshard.studio/@steffo"} icon={faCircleNodes} text={"Star Shard Uno"} description={"@steffo@uno.starshard.studio"}/>
+                    <LinkPanel
+                        href={"https://uno.starshard.studio/@steffo"}
+                        icon={faCircleNodes}
+                        text={"Star Shard Uno"}
+                        description={"@steffo@uno.starshard.studio"}
+                    />
                 </div>
                 <hr/>
                 <p>
@@ -317,14 +322,24 @@ const Index: NextPage = () => {
                     For your safety and better browser performance, you should install:
                 </p>
                 <div className={"group-lp"}>
-                    <LinkPanel icon={faShieldAlt} text={"uBlock Origin"} href={"https://ublockorigin.com"} description={"Free, open-source ad content blocker"}/>
+                    <LinkPanel
+                        icon={faShieldAlt}
+                        text={"uBlock Origin"}
+                        href={"https://ublockorigin.com"}
+                        description={"Free, open-source ad content blocker"}
+                    />
                 </div>
                 <hr/>
                 <p>
                     Additionally, if you are technically inclined, consider setting up this on your network:
                 </p>
                 <div className={"group-lp"}>
-                    <LinkPanel icon={faShield} text={"Pi-Hole"} href={"https://pi-hole.net"} description={"Network-wide ad blocking"}/>
+                    <LinkPanel
+                        icon={faShield}
+                        text={"Pi-Hole"}
+                        href={"https://pi-hole.net"}
+                        description={"Network-wide ad blocking"}
+                    />
                 </div>
                 <hr/>
                 <p>
