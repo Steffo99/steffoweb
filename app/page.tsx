@@ -170,10 +170,10 @@ export default function RootPage() {
                 </p>
                 <div className={"group-lp"}>
                     <LinkPanel
-                        href={"https://uno.starshard.studio/@steffo"}
+                        href={"https://junimo.party/users/steffo"}
                         icon={faCircleNodes}
-                        text={"Star Shard Uno"}
-                        description={"@steffo@uno.starshard.studio"}
+                        text={"Junimo Party"}
+                        description={"@steffo@junimo.party"}
                         me
                     />
                 </div>
